@@ -1,5 +1,5 @@
 :root{
-	--font-h1:'Zodiak-ThinItalic';
+	--font-h1:'Gambarino-Regular';
 	--font-h2:'PlusJakartaSans-Light';
 	--font-h3:'Zodiak-Thin';
 	--font-h4:'JetBrainsMono-Thin';
@@ -9,7 +9,7 @@
 	--font-info:'JetBrainsMono-Thin';
 
 	--base-font-size: 16px;
-	--h1-font-size: calc(3.7 * var(--base-font-size));
+	--h1-font-size: calc(3.9 * var(--base-font-size));
 	--h2-font-size: calc(1.6 * var(--base-font-size));
 	--h3-font-size: calc(1.5 * var(--base-font-size));
 	--h4-font-size: var(--base-font-size);
@@ -19,6 +19,23 @@
 	--indent-size: 40px;
 	--spacing: calc(2* var(--base-font-size));
 }
+
+h1{
+  writing-mode: vertical-rl;
+  line-height: calc(1.2 * var(--h1-font-size));
+  max-height: 400px;
+}
+
+@font-face {
+  font-family: 'Gambarino-Regular';
+  src: url('../fonts/Gambarino-Regular.woff2') format('woff2'),
+       url('../fonts/Gambarino-Regular.woff') format('woff'),
+       url('../fonts/Gambarino-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
 
 @font-face {
   font-family: 'Zodiak-ThinItalic';
@@ -55,13 +72,4 @@
        font-weight: 300;
        font-display: swap;
        font-style: normal;
-}
-
-
-h1{
-	line-height: var(--h1-font-size);
-	margin: var(--spacing) 0 calc(1.2* var(--h1-font-size)) 0;
-}
-.author-and-date{
-	margin-bottom: var(--base-font-size);
 }

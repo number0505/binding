@@ -8,7 +8,6 @@ body{
 	text-transform: uppercase;
 	font-family: var(--font-info);
 	font-size: calc(.9 * var(--base-font-size));
-	margin-bottom: var(--base-font-size);
 }
 .item-author {
   flex: none;
@@ -21,8 +20,6 @@ body{
 h1{
 	font-family: var(--font-h1);
 	font-size: var(--h1-font-size);
-	line-height: var(--h1-font-size);
-	margin: var(--spacing) 0 calc(1.2* var(--h1-font-size)) 0;
 
 	width: auto;
 	
