@@ -1,6 +1,7 @@
 :root{
 	--font-h1:'Zodiak-ThinItalic';
 	--font-h2:'JetBrainsMono-Thin';
+	--font-p: 'PlusJakartaSans-Light';
 
 	--base-font-size: 16px;
 	--h1-font-size: calc(3.7 * var(--base-font-size));
@@ -25,6 +26,15 @@
        url(fonts/JetBrainsMono-Thin.woff) format('woff'),
        url(fonts/JetBrainsMono-Thin.ttf) format('truetype');
        font-weight: 100;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'PlusJakartaSans-Light';
+  src: url(PlusJakartaSans-Light.woff2) format('woff2'),
+       url(PlusJakartaSans-Light.woff) format('woff'),
+       url(PlusJakartaSans-Light.ttf') format('truetype');
+       font-weight: 300;
        font-display: swap;
        font-style: normal;
 }

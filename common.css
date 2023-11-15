@@ -40,5 +40,5 @@ h3, h4, h5{
 }
 
 p{
-	font-family: var(--font-display);
+	font-family: var(--font-p);
 }
