@@ -3,6 +3,10 @@ body{
 }
 
 .author-and-date{
+	display: flex;
+	flex-direction: row;
+
+
 	text-transform: uppercase;
 	font-size: calc(.9 * var(--base-font-size));
 	margin-bottom: var(--base-font-size);
@@ -40,16 +44,16 @@ h2{
 	hyphens: auto; 
 }
 
-aside h{
+aside > h4{
 	border-top: solid black 1px;
-	border-top: solid black 1px;
-
 }
-h3{
-	font-family: var(--font-h3);
-	font-size: var(--h3-font-size);
+h4{
+	font-family: var(--font-h4);
+	font-size: var(--h4-font-size);
 	margin-bottom: var(--spacing);
 }
+
+
 
 p{
 	font-family: var(--font-p);
