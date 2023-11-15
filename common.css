@@ -5,11 +5,16 @@ body{
 .author-and-date{
 	display: flex;
 	flex-direction: row;
-
-
 	text-transform: uppercase;
 	font-size: calc(.9 * var(--base-font-size));
 	margin-bottom: var(--base-font-size);
+}
+.item-author {
+  flex: none;
+}
+
+.item-date {
+  margin-left: auto;
 }
 
 h1{
@@ -52,7 +57,9 @@ h4{
 	font-size: var(--h4-font-size);
 	margin-bottom: var(--spacing);
 }
-
+ul{
+	list-style-type: decimal;
+}
 
 
 p{
