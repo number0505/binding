@@ -1,9 +1,9 @@
 :root{
-	--font-h1:'Gambarino-Regular';
+	--font-h1:'Boska-Regular';
 	--font-h2:'PlusJakartaSans-Light';
 	--font-h3:'Zodiak-Thin';
 	--font-h4:'JetBrainsMono-Thin';
-	--font-ul:'PlusJakartaSans-Light';
+	--font-ul:'PlusJakartaSans-Light';ss
 	--font-p:'PlusJakartaSans-Light';
 	--font-blockquote: 'Zodiak-LightItalic';
 	--font-info:'JetBrainsMono-Thin';
@@ -26,16 +26,16 @@ h1{
   max-height: 400px;
 }
 
+
 @font-face {
-  font-family: 'Gambarino-Regular';
-  src: url('../fonts/Gambarino-Regular.woff2') format('woff2'),
-       url('../fonts/Gambarino-Regular.woff') format('woff'),
-       url('../fonts/Gambarino-Regular.ttf') format('truetype');
+  font-family: 'Boska-Regular';
+  src: url(fonts/Boska-Regular.woff2) format('woff2'),
+       url(fonts/Boska-Regular.woff) format('woff'),
+       url(fonts/Boska-Regular.ttf) format('truetype');
        font-weight: 400;
        font-display: swap;
        font-style: normal;
 }
-
 
 @font-face {
   font-family: 'Zodiak-ThinItalic';
