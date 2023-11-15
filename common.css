@@ -54,12 +54,13 @@ h2{
 h4{
 	font-family: var(--font-h4);
 	font-size: var(--h4-font-size);
+	margin-bottom: var(--spacing);
 }
 ul{
 	list-style-type: decimal;
 	font-family: var(--font-ul);
 	margin-left: var(--indent-size);
-	padding: var(--spacing) 0;
+	padding-bottom: var(--spacing);
 	
 	font-size: var(--ul-font-size);
 	line-height: calc(1.2 * var(--h2-font-size));
@@ -75,8 +76,13 @@ p{
 }
 
 .intro{
-	
+	border-top: solid black 1px;
+	margin-bottom: calc(2 * var(--spacing));
+
 }
 blockquote{
-
+	font-family: var(--font-blockquote);
+	font-size: var(--blockquote-size);
+	padding-left: var(--indent-size);
+	margin-bottom: var(--blockquote-size);
 }

@@ -5,6 +5,7 @@
 	--font-h4:'JetBrainsMono-Thin';
 	--font-ul:'PlusJakartaSans-Light';
 	--font-p:'JetBrainsMono-Thin';
+	--font-blockquote: 'Zodiak-ThinItalic';
 
 	--base-font-size: 16px;
 	--h1-font-size: calc(3.7 * var(--base-font-size));
@@ -12,6 +13,7 @@
 	--h3-font-size: calc(1.5 * var(--base-font-size));
 	--h4-font-size: var(--base-font-size);
 	--ul-font-size: var(--base-font-size);
+	--blockquote-size: calc(1.5 * var(--base-font-size));
 
 	--indent-size: 40px;
 	--spacing: calc(2* var(--base-font-size));
