@@ -39,7 +39,6 @@ h2{
 	line-height: calc(1.2 * var(--h2-font-size));
 	margin-bottom: calc(1.2* var(--h1-font-size));
 
-
 	width: auto;
 	-webkit-hyphens: auto; 
 	hyphens: auto; 
@@ -54,6 +53,7 @@ h4{
 	font-size: var(--h4-font-size);
 	margin-bottom: var(--spacing);
 }
+
 ul{
 	list-style-type: decimal;
 	font-family: var(--font-ul);
@@ -64,10 +64,7 @@ ul{
 	line-height: calc(1.2 * var(--h2-font-size));
 }
 
-.contents{
-	border-top: solid black 1px;
-	margin-bottom: calc(2 * var(--spacing));
-}
+
 p{
 	font-family: var(--font-p);
 	font-size: var(--base-font-size);
@@ -75,10 +72,9 @@ p{
 	margin-bottom: var(--base-font-size);
 }
 
-.intro{
+.section{
 	border-top: solid black 1px;
 	margin-bottom: calc(2 * var(--spacing));
-
 }
 
 blockquote{

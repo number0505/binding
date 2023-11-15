@@ -27,10 +27,11 @@ h1{
   max-height: 400px;
   margin-bottom: var(--spacing)
 }
-.section1{
-  display: grid;
-	grid-template-columns: repeat(auto-fill, 1fr);
+.section{
+  display: flex;
+  flex-direction:row;
 }
+
 @font-face {
   font-family: 'Switzer-Medium';
   src: url(fonts/Switzer-Medium.woff2) format('woff2'),
