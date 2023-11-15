@@ -50,10 +50,11 @@ h2{
 /* aside > h4{
 	border-top: solid black 1px;
 } */
+
 h4{
 	font-family: var(--font-h4);
 	font-size: var(--h4-font-size);
-	margin-bottom: var(--spacing);
+	margin-bottom: var(--h4-font-size);
 }
 ul{
 	list-style-type: decimal;
@@ -66,7 +67,7 @@ ul{
 
 .contents{
 	border-top: solid black 1px;
-	border-bottom: solid black 1px;
+	margin-bottom: var(--spacing);
 }
 p{
 	font-family: var(--font-p);

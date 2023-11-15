@@ -14,7 +14,7 @@
 	--ul-font-size: var(--base-font-size);
 
 	--indent-size: 40px;
-	--spacing: calc(1.5* var(--base-font-size));
+	--spacing: calc(2* var(--base-font-size));
 }
 
 @font-face {
