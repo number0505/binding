@@ -22,24 +22,30 @@ h1{
 
 .title{
 	border-top: solid black 1px;
+	margin-bottom: calc(1.5* var(--h1-font-size));
 }
 
 p .title{
 	padding: var(--base-font-size) 0;
 }
 
-
 h2{
 	font-family: var(--font-h2);
 	font-size: var(--h2-font-size);
 	line-height: var(--h2-font-size);
 	margin: var(--h2-font-size) 0 ;
+	text-indent: 2em;
 	width: auto;
 	-webkit-hyphens: auto; 
 	hyphens: auto; 
 }
 
-h3, h4, h5{
+aside h{
+	border-top: solid black 1px;
+	border-top: solid black 1px;
+
+}
+h3{
 	font-family: var(--font-h2);
 	font-size: var(--base-font-size);
 	margin-bottom: var(--spacing);
