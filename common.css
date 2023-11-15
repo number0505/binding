@@ -1,5 +1,11 @@
 body{
-	margin: calc(2 * var(--base-font-size)) var(--base-font-size);
+	margin: var(--base-font-size);
+}
+
+.author-and-date{
+	text-transform: uppercase;
+	font-size: calc(.9 * var(--base-font-size));
+	margin-bottom: var(--base-font-size);
 }
 
 h1{
