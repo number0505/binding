@@ -1,6 +1,9 @@
-
+body{
+	margin: calc(2 * var(--base-font-size)) var(--base-font-size);
+}
 
 h1, h2, h3, h4, h5{
 	font-family: var(--font-display);
-	margin-bottom: var(--spacing)
+	font-size: var(--base-font-size);
+	margin-bottom: var(--spacing);
 }

@@ -1,4 +1,15 @@
 :root{
-	--font-display:'helvetica';
+	--font-display:'Zodiak-ThinItalic';
+	--base-font-size: 16px;
 	--spacing: 10px;
+}
+
+@font-face {
+  font-family: 'Zodiak-ThinItalic';
+  src: url(fonts/Zodiak-ThinItalic.woff2) format('woff2'),
+       url(fonts/odiak-ThinItalic.woff) format('woff'),
+       url(fonts/Zodiak-ThinItalic.ttf) format('truetype');
+       font-weight: 100;
+       font-display: swap;
+       font-style: italic;
 }
