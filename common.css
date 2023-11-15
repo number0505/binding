@@ -67,10 +67,13 @@ ul{
 
 .contents{
 	border-top: solid black 1px;
-	border-bottom: solid black 1px;
 	margin-bottom: calc(2 * var(--spacing));
 }
 p{
 	font-family: var(--font-p);
 	font-size: var(--base-font-size);
+}
+
+blockquote{
+
 }
