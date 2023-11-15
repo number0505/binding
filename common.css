@@ -57,7 +57,6 @@ h4{
 ul{
 	list-style-type: decimal;
 	font-family: var(--font-ul);
-	margin-left: var(--indent-size);
 	padding-bottom: var(--spacing);
 	
 	font-size: var(--ul-font-size);
@@ -74,15 +73,14 @@ p{
 
 .section{
 	border-top: solid black 1px;
-	margin-bottom: calc(2 * var(--spacing));
+	margin: calc(2 * var(--spacing)) 0;
+
 }
 
 blockquote{
 	font-family: var(--font-blockquote);
 	font-size: var(--blockquote-size);
 	line-height:  calc(1.5 * var(--blockquote-size));
-	padding-left: var(--indent-size);
-	margin: calc(2 * var(--spacing)) 0;
 }
 
 .info{

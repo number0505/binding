@@ -26,6 +26,15 @@ h1{
   max-height: 400px;
 }
 
+ul{
+	margin-left: var(--indent-size);
+}
+
+blockquote{
+
+	margin: calc(2 * var(--spacing)) 0;
+}
+
 
 @font-face {
   font-family: 'Boska-Regular';

@@ -57,6 +57,9 @@
        font-style: normal;
 }
 
+ul{
+	padding-left: var(--indent-size);
+}
 
 h1{
 	line-height: var(--h1-font-size);
@@ -64,4 +67,7 @@ h1{
 }
 .author-and-date{
 	margin-bottom: var(--base-font-size);
+}
+blockquote{
+	margin: calc(2 * var(--spacing)) 0;
 }

@@ -14,7 +14,7 @@
 	--h3-font-size: calc(1.5 * var(--base-font-size));
 	--h4-font-size: var(--base-font-size);
 	--ul-font-size: var(--base-font-size);
-	--blockquote-size: calc(1.8 * var(--base-font-size));
+	--blockquote-size: calc(1.5 * var(--base-font-size));
 
 	--indent-size: 40px;
 	--spacing: calc(2* var(--base-font-size));
@@ -27,9 +27,24 @@ h1{
   max-height: 400px;
   margin-bottom: var(--spacing)
 }
+ul{
+	margin-left: var(--base-font-size);
+}
+h4{
+  writing-mode: vertical-rl;
+  padding: calc(.5* var(--base-font-size));
+  border-right: black 1pt solid;
+}
 .section{
   display: flex;
   flex-direction:row;
+  gap: calc(.5 * var(--base-font-size));
+}
+.contents{
+  padding: calc(2* var(--base-font-size)) 0;
+}
+blockquote{
+  margin: var(--blockquote-size) 0;
 }
 
 @font-face {
