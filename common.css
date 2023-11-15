@@ -34,11 +34,12 @@ h2{
 }
 
 h3, h4, h5{
-	font-family: var(--font-display);
+	font-family: var(--font-h2);
 	font-size: var(--base-font-size);
 	margin-bottom: var(--spacing);
 }
 
 p{
 	font-family: var(--font-p);
+	font-size: var(--base-font-size);
 }
