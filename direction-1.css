@@ -4,9 +4,9 @@
 
 	--base-font-size: 16px;
 	--h1-font-size: calc(3.7 * var(--base-font-size));
-	--h2-font-size: calc(2	 * var(--base-font-size));
+	--h2-font-size: calc(1.8	 * var(--base-font-size));
 
-	--spacing: 10px;
+	--spacing: calc(1.5* var(--base-font-size));
 }
 
 @font-face {
