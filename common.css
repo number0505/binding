@@ -8,8 +8,12 @@ h1{
 	line-height: var(--h1-font-size);
 	margin-bottom: var(--spacing);
 	width: auto;
+	
 	-webkit-hyphens: auto; 
 	hyphens: auto; 
+	
+	border-top: solid black 1px;
+	
 }
 
 
