@@ -4,8 +4,9 @@
 	--font-h3:'Zodiak-Thin';
 	--font-h4:'JetBrainsMono-Thin';
 	--font-ul:'PlusJakartaSans-Light';
-	--font-p:'JetBrainsMono-Thin';
-	--font-blockquote: 'Zodiak-ThinItalic';
+	--font-p:'PlusJakartaSans-Light';
+	--font-blockquote: 'Zodiak-LightItalic';
+	--font-info:'JetBrainsMono-Thin';
 
 	--base-font-size: 16px;
 	--h1-font-size: calc(3.7 * var(--base-font-size));
@@ -13,7 +14,7 @@
 	--h3-font-size: calc(1.5 * var(--base-font-size));
 	--h4-font-size: var(--base-font-size);
 	--ul-font-size: var(--base-font-size);
-	--blockquote-size: calc(1.5 * var(--base-font-size));
+	--blockquote-size: calc(1.3 * var(--base-font-size));
 
 	--indent-size: 40px;
 	--spacing: calc(2* var(--base-font-size));
@@ -29,13 +30,13 @@
        font-style: italic;
 }
 @font-face {
-  font-family: 'Zodiak-Light';
-  src: url(fonts/Zodiak-Light.woff2) format('woff2'),
-       url(fonts/odiak-Light.woff) format('woff'),
-       url(fonts/Zodiak-Light.ttf) format('truetype');
+  font-family: 'Zodiak-LightItalic';
+  src: url(fonts/Zodiak-LightItalic.woff2) format('woff2'),
+       url(fonts/odiak-LightItalic.woff) format('woff'),
+       url(fonts/Zodiak-LightItalic.ttf) format('truetype');
        font-weight: 300;
        font-display: swap;
-       font-style: normal;
+       font-style: italic;
 }
 @font-face {
   font-family: 'JetBrainsMono-Thin';

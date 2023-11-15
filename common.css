@@ -6,6 +6,7 @@ body{
 	display: flex;
 	flex-direction: row;
 	text-transform: uppercase;
+	font-family: var(--font-info);
 	font-size: calc(.9 * var(--base-font-size));
 	margin-bottom: var(--base-font-size);
 }
@@ -73,6 +74,8 @@ ul{
 p{
 	font-family: var(--font-p);
 	font-size: var(--base-font-size);
+	line-height: calc(1.8  * var(--base-font-size));
+	margin-bottom: var(--base-font-size);
 }
 
 .intro{
@@ -80,9 +83,18 @@ p{
 	margin-bottom: calc(2 * var(--spacing));
 
 }
+
 blockquote{
 	font-family: var(--font-blockquote);
 	font-size: var(--blockquote-size);
+	line-height:  calc(1.5 * var(--blockquote-size));
 	padding-left: var(--indent-size);
-	margin-bottom: var(--blockquote-size);
+	margin: calc(2 * var(--spacing)) 0;
+}
+
+.info{
+	font-family: var(--font-info);
+	font-size: calc(.9 * var(--base-font-size));
+	margin: var(--base-font-size) 0;
+	line-height: calc(1.2 * var(--base-font-size));
 }
