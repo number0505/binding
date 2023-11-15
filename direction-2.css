@@ -1,20 +1,20 @@
 :root{
 	--font-h1:'Boska-Regular';
-	--font-h2:'PlusJakartaSans-Light';
-	--font-h3:'Zodiak-Thin';
-	--font-h4:'JetBrainsMono-Thin';
-	--font-ul:'PlusJakartaSans-Light';ss
-	--font-p:'PlusJakartaSans-Light';
-	--font-blockquote: 'Zodiak-LightItalic';
-	--font-info:'JetBrainsMono-Thin';
+	--font-h2:'Supreme-Light';
+	--font-h3:'Boska-Regular';
+	--font-h4:'JetBrainsMono-Regular';
+	--font-ul:'Supreme-Light';
+	--font-p:'Supreme-Light';
+	--font-blockquote: 'Boska-Regular';
+	--font-info:'JetBrainsMono-Regular';
 
-	--base-font-size: 16px;
+	--base-font-size: 17px;
 	--h1-font-size: calc(3.9 * var(--base-font-size));
-	--h2-font-size: calc(1.6 * var(--base-font-size));
+	--h2-font-size: calc(1.9 * var(--base-font-size));
 	--h3-font-size: calc(1.5 * var(--base-font-size));
 	--h4-font-size: var(--base-font-size);
 	--ul-font-size: var(--base-font-size);
-	--blockquote-size: calc(1.3 * var(--base-font-size));
+	--blockquote-size: calc(1.8 * var(--base-font-size));
 
 	--indent-size: 40px;
 	--spacing: calc(2* var(--base-font-size));
@@ -38,6 +38,15 @@ h1{
 }
 
 @font-face {
+  font-family: 'Supreme-Light';
+  src: url(fonts/Supreme-Light.woff2) format('woff2'),
+       url(fonts/Supreme-Light.woff) format('woff'),
+       url(fonts/Supreme-Light.ttf) format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
   font-family: 'Zodiak-ThinItalic';
   src: url(fonts/Zodiak-ThinItalic.woff2) format('woff2'),
        url(fonts/odiak-ThinItalic.woff) format('woff'),
@@ -56,10 +65,10 @@ h1{
        font-style: italic;
 }
 @font-face {
-  font-family: 'JetBrainsMono-Thin';
-  src: url(fonts/JetBrainsMono-Thin.woff2) format('woff2'),
-       url(fonts/JetBrainsMono-Thin.woff) format('woff'),
-       url(fonts/JetBrainsMono-Thin.ttf) format('truetype');
+  font-family: 'JetBrainsMono-Regular';
+  src: url(fonts/JetBrainsMono-Regular.woff2) format('woff2'),
+       url(fonts/JetBrainsMono-Regular.woff) format('woff'),
+       url(fonts/JetBrainsMono-Regular.ttf) format('truetype');
        font-weight: 100;
        font-display: swap;
        font-style: normal;
