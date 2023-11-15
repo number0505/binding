@@ -8,11 +8,11 @@
 
 	--base-font-size: 16px;
 	--h1-font-size: calc(3.7 * var(--base-font-size));
-	--h2-font-size: calc(1.8 * var(--base-font-size));
+	--h2-font-size: calc(1.6 * var(--base-font-size));
 	--h3-font-size: calc(1.5 * var(--base-font-size));
 	--h3-font-size: var(--base-font-size);
 
-	--indent-size: 2em;
+	--indent-size: 40px;
 	--spacing: calc(1.5* var(--base-font-size));
 }
 

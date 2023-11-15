@@ -21,29 +21,27 @@ h1{
 	font-family: var(--font-h1);
 	font-size: var(--h1-font-size);
 	line-height: var(--h1-font-size);
-	margin: var(--spacing), 0;
+	margin: var(--spacing) 0 calc(1.2* var(--h1-font-size)) 0;
+
 	width: auto;
 	
 	-webkit-hyphens: auto; 
 	hyphens: auto; 
-
 }
 
 .title{
-	border-top: solid black 1px;
-	margin-bottom: calc(1.5* var(--h1-font-size));
+	/* border-top: solid black 1px; */
+	margin-bottom: calc(1.2* var(--h1-font-size));
 }
 
-p .title{
-	padding: var(--base-font-size) 0;
-}
 
 h2{
 	font-family: var(--font-h2);
 	font-size: var(--h2-font-size);
-	line-height: var(--h2-font-size);
-	margin: var(--h2-font-size) 0 ;
-	text-indent: var(--indent-size);
+	line-height: calc(1.2 * var(--h2-font-size));
+	margin-bottom: calc(1.2* var(--h1-font-size));
+
+
 	width: auto;
 	-webkit-hyphens: auto; 
 	hyphens: auto; 
@@ -59,9 +57,8 @@ h4{
 }
 ul{
 	list-style-type: decimal;
-	margin-left: var(--indent-size);
 	font-family: var(--font-ul);
-	
+	margin-left: var(--indent-size);
 }
 
 
