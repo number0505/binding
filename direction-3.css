@@ -27,6 +27,10 @@ h1{
   max-height: 400px;
   margin-bottom: var(--spacing)
 }
+h2{
+  margin-top: calc(1.2* var(--h1-font-size));
+
+}
 ul{
 	margin-left: var(--base-font-size);
 }
@@ -39,6 +43,7 @@ h4{
   display: flex;
   flex-direction:row;
   gap: calc(.5 * var(--base-font-size));
+  border-top: black 1pt solid;
 }
 .contents{
   padding: calc(2* var(--base-font-size)) 0;
