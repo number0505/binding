@@ -1,0 +1,104 @@
+:root{
+	--font-h1:'Switzer-Medium';
+	--font-h2:'Switzer-Light';
+	--font-h3:'Boska-Regular';
+	--font-h4:'JetBrainsMono-Light';
+	--font-ul:'Supreme-Light';
+	--font-p:'Supreme-Light';
+	--font-blockquote: 'Boska-Regular';
+	--font-info:'JetBrainsMono-Light';
+
+	--base-font-size: 17px;
+	--h1-font-size: calc(4.5 * var(--base-font-size));
+	--h2-font-size: calc(1.9 * var(--base-font-size));
+	--h3-font-size: calc(1.5 * var(--base-font-size));
+	--h4-font-size: var(--base-font-size);
+	--ul-font-size: var(--base-font-size);
+	--blockquote-size: calc(1.8 * var(--base-font-size));
+
+	--indent-size: 40px;
+	--spacing: calc(2* var(--base-font-size));
+}
+
+h1{
+  line-height: var(--h1-font-size);
+  line-height: var(--h1-font-size);
+  max-height: 400px;
+  margin-bottom: var(--spacing)
+}
+
+@font-face {
+  font-family: 'Switzer-Medium';
+  src: url(fonts/Switzer-Medium.woff2) format('woff2'),
+       url(fonts/Switzer-Medium.woff) format('woff'),
+       url(fonts/Switzer-Medium.ttf) format('truetype');
+       font-weight: 200;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Switzer-Light';
+  src: url(fonts/Switzer-Light.woff2) format('woff2'),
+       url(fonts/Switzer-Light.woff) format('woff'),
+       url(fonts/Switzer-Light.ttf) format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Boska-Regular';
+  src: url(fonts/Boska-Regular.woff2) format('woff2'),
+       url(fonts/Boska-Regular.woff) format('woff'),
+       url(fonts/Boska-Regular.ttf) format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Supreme-Light';
+  src: url(fonts/Supreme-Light.woff2) format('woff2'),
+       url(fonts/Supreme-Light.woff) format('woff'),
+       url(fonts/Supreme-Light.ttf) format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Zodiak-ThinItalic';
+  src: url(fonts/Zodiak-ThinItalic.woff2) format('woff2'),
+       url(fonts/odiak-ThinItalic.woff) format('woff'),
+       url(fonts/Zodiak-ThinItalic.ttf) format('truetype');
+       font-weight: 100;
+       font-display: swap;
+       font-style: italic;
+}
+@font-face {
+  font-family: 'Zodiak-LightItalic';
+  src: url(fonts/Zodiak-LightItalic.woff2) format('woff2'),
+       url(fonts/odiak-LightItalic.woff) format('woff'),
+       url(fonts/Zodiak-LightItalic.ttf) format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: italic;
+}
+@font-face {
+  font-family: 'JetBrainsMono-Light';
+  src: url(fonts/JetBrainsMono-Light.woff2) format('woff2'),
+       url(fonts/JetBrainsMono-Light.woff) format('woff'),
+       url(fonts/JetBrainsMono-Light.ttf) format('truetype');
+       font-weight: 100;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'PlusJakartaSans-Light';
+  src: url(fonts/PlusJakartaSans-Light.woff2) format('woff2'),
+       url(fonts/PlusJakartaSans-Light.woff) format('woff'),
+       url(fonts/PlusJakartaSans-Light.ttf) format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
