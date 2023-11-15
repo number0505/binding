@@ -1,6 +1,7 @@
 :root{
 	--font-display:'Zodiak-ThinItalic';
 	--base-font-size: 16px;
+	--h1-font-size: calc(5 * var(--base-font-size));
 	--spacing: 10px;
 }
 
