@@ -9,8 +9,8 @@
 	--font-info:'JetBrainsMono-Light';
 
 	--base-font-size: 17px;
-	--h1-font-size: calc(4.5 * var(--base-font-size));
-	--h2-font-size: calc(1.9 * var(--base-font-size));
+	--h1-font-size: calc(3.2 * var(--base-font-size));
+	--h2-font-size: calc(1.6 * var(--base-font-size));
 	--h3-font-size: calc(1.5 * var(--base-font-size));
 	--h4-font-size: var(--base-font-size);
 	--ul-font-size: var(--base-font-size);
@@ -23,10 +23,14 @@
 h1{
   line-height: var(--h1-font-size);
   line-height: var(--h1-font-size);
+  text-transform: uppercase;
   max-height: 400px;
   margin-bottom: var(--spacing)
 }
-
+.section1{
+  display: grid;
+	grid-template-columns: repeat(auto-fill, 1fr);
+}
 @font-face {
   font-family: 'Switzer-Medium';
   src: url(fonts/Switzer-Medium.woff2) format('woff2'),
