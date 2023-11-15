@@ -26,17 +26,10 @@ h1{
 	-webkit-hyphens: auto; 
 	hyphens: auto; 
 }
-
-.title{
-	/* border-top: solid black 1px; */
-	margin-bottom: calc(1.2* var(--h1-font-size));
-}
-
-
 h2{
 	font-family: var(--font-h2);
 	font-size: var(--h2-font-size);
-	line-height: calc(1.2 * var(--h2-font-size));
+	line-height: calc(1.4 * var(--h2-font-size));
 	margin-bottom: calc(1.2* var(--h1-font-size));
 
 	width: auto;
@@ -72,9 +65,7 @@ p{
 }
 
 .section{
-	border-top: solid black 1px;
 	margin: calc(2 * var(--spacing)) 0;
-
 }
 
 blockquote{

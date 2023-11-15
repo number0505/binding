@@ -2,7 +2,7 @@
 	--font-h1:'Zodiak-ThinItalic';
 	--font-h2:'PlusJakartaSans-Light';
 	--font-h3:'Zodiak-Thin';
-	--font-h4:'JetBrainsMono-Thin';
+	--font-h4:'Zodiak-ThinItalic';
 	--font-ul:'PlusJakartaSans-Light';
 	--font-p:'PlusJakartaSans-Light';
 	--font-blockquote: 'Zodiak-LightItalic';
@@ -10,9 +10,9 @@
 
 	--base-font-size: 16px;
 	--h1-font-size: calc(3.7 * var(--base-font-size));
-	--h2-font-size: calc(1.6 * var(--base-font-size));
+	--h2-font-size: calc(1.5 * var(--base-font-size));
 	--h3-font-size: calc(1.5 * var(--base-font-size));
-	--h4-font-size: var(--base-font-size);
+	--h4-font-size: calc(1.5 * var(--base-font-size));
 	--ul-font-size: var(--base-font-size);
 	--blockquote-size: calc(1.3 * var(--base-font-size));
 
@@ -57,17 +57,34 @@
        font-style: normal;
 }
 
-ul{
-	padding-left: var(--indent-size);
-}
 
 h1{
 	line-height: var(--h1-font-size);
 	margin: var(--spacing) 0 calc(1.2* var(--h1-font-size)) 0;
+  text-align:center;
+  /* border-top: solid black 1px;
+  padding-top: var(--blockquote-size); */
+}
+
+.title{
+	/* border-top: solid black 1px; */
+	margin-bottom: calc(1.2* var(--h1-font-size));
+}
+
+.section{
+	border-top: solid black 1px;
+}
+h2{
+  text-align:center;
+}
+
+ul{
+	padding-left: var(--indent-size);
 }
 .author-and-date{
 	margin-bottom: var(--base-font-size);
 }
 blockquote{
-	margin: calc(2 * var(--spacing)) 0;
+	padding-left: var(--spacing);
+  margin: calc(2* var(--spacing)) 0;
 }

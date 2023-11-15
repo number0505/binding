@@ -9,7 +9,7 @@
 	--font-info:'JetBrainsMono-Regular';
 
 	--base-font-size: 17px;
-	--h1-font-size: calc(3.9 * var(--base-font-size));
+	--h1-font-size: calc(4.7 * var(--base-font-size));
 	--h2-font-size: calc(1.9 * var(--base-font-size));
 	--h3-font-size: calc(1.5 * var(--base-font-size));
 	--h4-font-size: var(--base-font-size);
@@ -22,17 +22,37 @@
 
 h1{
   writing-mode: vertical-rl;
-  line-height: calc(1.2 * var(--h1-font-size));
+  line-height: calc(1.37 * var(--h1-font-size));
   max-height: 400px;
+  border-left: black solid 1px;
+}
+.align-titleline{
+  display: flex;
+  flex-direction:column;
+}
+.titleline{
+  border-right: solid black 1px;
+  min-height: 400px;
+}
+.author-and-date{
+  margin-top: var(--base-font-size);
 }
 
+.title{
+	/* border-top: solid black 1px; */
+	margin-bottom: var(--spacing);
+}
+
+
+.section{
+  border-top: solid black 1px;
+}
 ul{
 	margin-left: var(--indent-size);
 }
-
 blockquote{
-
-	margin: calc(2 * var(--spacing)) 0;
+	padding-left: var(--spacing);
+  margin: calc(2* var(--spacing)) 0;
 }
 
 

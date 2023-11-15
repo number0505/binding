@@ -2,11 +2,11 @@
 	--font-h1:'Switzer-Medium';
 	--font-h2:'Switzer-Light';
 	--font-h3:'Boska-Regular';
-	--font-h4:'JetBrainsMono-Light';
+	--font-h4:'Switzer-Light';
 	--font-ul:'Switzer-Light';
 	--font-p:'Switzer-Light';
 	--font-blockquote: 'Switzer-Light';
-	--font-info:'JetBrainsMono-Light';
+	--font-info:'Supreme-Light';
 
 	--base-font-size: 17px;
 	--h1-font-size: calc(3.2 * var(--base-font-size));
