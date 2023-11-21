@@ -1,12 +1,12 @@
 :root{
 	--font-h1:'Boska-Regular';
-	--font-h2:'Supreme-Light';
+	--font-h2:'Switzer-Light';
 	--font-h3:'Boska-Regular';
-	--font-h4:'JetBrainsMono-Regular';
-	--font-ul:'Supreme-Light';
-	--font-p:'Supreme-Light';
+	--font-h4:'JetBrainsMono-Light';
+	--font-ul:'Switzer-Light';
+	--font-p:'Switzer-Light';
 	--font-blockquote: 'Boska-Regular';
-	--font-info:'JetBrainsMono-Regular';
+	--font-info:'JetBrainsMono-Light';
 
 	--base-font-size: 17px;
 	--h1-font-size: calc(4.7 * var(--base-font-size));
@@ -67,10 +67,10 @@ blockquote{
 }
 
 @font-face {
-  font-family: 'Supreme-Light';
-  src: url(fonts/Supreme-Light.woff2) format('woff2'),
-       url(fonts/Supreme-Light.woff) format('woff'),
-       url(fonts/Supreme-Light.ttf) format('truetype');
+  font-family: 'Switzer-Light';
+  src: url(fonts/Switzer-Light.woff2) format('woff2'),
+       url(fonts/Switzer-Light.woff) format('woff'),
+       url(fonts/Switzer-Light.ttf) format('truetype');
        font-weight: 400;
        font-display: swap;
        font-style: normal;
@@ -94,10 +94,10 @@ blockquote{
        font-style: italic;
 }
 @font-face {
-  font-family: 'JetBrainsMono-Regular';
-  src: url(fonts/JetBrainsMono-Regular.woff2) format('woff2'),
-       url(fonts/JetBrainsMono-Regular.woff) format('woff'),
-       url(fonts/JetBrainsMono-Regular.ttf) format('truetype');
+  font-family: 'JetBrainsMono-Light';
+  src: url(fonts/JetBrainsMono-Light.woff2) format('woff2'),
+       url(fonts/JetBrainsMono-Light.woff) format('woff'),
+       url(fonts/JetBrainsMono-Light.ttf) format('truetype');
        font-weight: 100;
        font-display: swap;
        font-style: normal;
