@@ -10,7 +10,7 @@
 
 	--base-font-size: 17px;
 	--h1-font-size: calc(4.7 * var(--base-font-size));
-	--h2-font-size: calc(1.9 * var(--base-font-size));
+	--h2-font-size: calc(1.7 * var(--base-font-size));
 	--h3-font-size: calc(1.5 * var(--base-font-size));
 	--h4-font-size: var(--base-font-size);
 	--ul-font-size: var(--base-font-size);
