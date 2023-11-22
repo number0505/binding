@@ -30,6 +30,9 @@
 	--spacing: calc(2* var(--base-font-size));
 
 	--border: solid black 1px;
+	--bg-01: 
+	--bg-02:
+	--bg-03:
 }
 
 
@@ -158,7 +161,7 @@ p{
 }
 
 .section{
-	margin: calc(2 * var(--spacing)) 0;
+	margin: calc(2 * var(--spacing)) 0 var(--spacing) 0;
 }
 
 blockquote{
