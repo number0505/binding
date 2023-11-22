@@ -41,6 +41,7 @@ header {
 header > h1{
 	margin: var(--h1-font-size) 0 calc(.5 * var(--h1-font-size)) 0;
 	text-transform: uppercase;
+	line-height: 100%;
 }
 
 .author-and-date{
@@ -82,29 +83,36 @@ nav{
 	height: 100%;
 
 	border-top: var(--border);
-  /* min-height: 600px; */
-}
+	border-bottom: var(--border);
+  /* min-width: 600px; */
 
-nav > ol{
 	display: flex;
 	flex-direction:column-reverse;
 	flex-wrap: nowrap;
-
-	font-family: var(--font-h1);
-	font-size: var(--h1-font-size);
-	line-height: var(--lh-h1);
 	writing-mode: vertical-rl;
+
+
+	font-family: var(--font-h2);
+	font-size: var(--h2-font-size);
+	line-height: var(--lh-h2);
 	align-content: center;
 
-	list-style: none;
 }
-nav > ol > li{
-	border-left: var(--border);
+nav > section {
+	border-right: var(--border);
 	padding-top: var(--base-font-size);
+
+	flex:1;
 }
-nav > ol > li > a > span:first-child {
+nav > section:last-child{
+	border-right: none;
+}
+nav > section> a {
+	text-align: center;
+}
+nav > section> a > span:first-child {
 	writing-mode: horizontal-tb;
-	
+
 }
 
 
@@ -137,7 +145,7 @@ h3{
 	font-family: var(--font-h3);
 	font-size: var(--h3-font-size);
 	line-height: calc(1.4 * var(--h3-font-size));
-	margin-bottom: calc(1.2* var(--h1-font-size));
+	margin-bottom: var(--spacing);
 
 	width: auto;
 	-webkit-hyphens: auto; 
