@@ -17,12 +17,14 @@
 	--h4-font-size: var(--base-font-size);
 	--ul-font-size: var(--base-font-size);
 	--blockquote-size: calc(1.8 * var(--base-font-size));
+	--cite-size: calc(.9 * var(--base-font-size));
   --titlenumber-size: calc(1.2 * var(--base-font-size));
 
 	--lh-h1: calc(1.37 * var(--h1-font-size));
 	--lh-h2: calc(1.37 * var(--h2-font-size));
 	--lh-h3: calc(1.5 * var(--h3-font-size));
 	--lh-titlenumber: calc(1 * var(--titlenumber-size));
+	--lh-cite: calc(1.3 * var(--cite-size));
 
 	--indent-size: 40px;
 	--spacing: calc(2* var(--base-font-size));
@@ -38,7 +40,6 @@ body{
 /* should be fixed*/ 
 header {
 	padding: var(--base-font-size);
-	margin-bottom: var(--h1-font-size);
 }
 
 /* should be considered
@@ -57,12 +58,13 @@ header > h1{
 	flex-direction: row;
 	text-transform: uppercase;
 	font-family: var(--font-info);
-	font-size: calc(.9 * var(--base-font-size));
+	font-size: var(--cite-size);
+	line-height: var(--lh-cite)
 }
+
 .item-author {
   flex: none;
 }
-
 .item-date {
   margin-left: auto;
 }
@@ -107,11 +109,12 @@ h1{
   border-top:  var(--border);
 }
 
+
 blockquote{
 	padding-left: var(--spacing);
-  margin: calc(2* var(--spacing)) 0;
+	border-left: var(--border);
+	margin-bottom: var(--spacing);
 }
-
 
 
 h3{
