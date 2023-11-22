@@ -1,7 +1,7 @@
 :root{
-	--font-h1:'Boska-Regular';
+	--font-h1:'Switzer-Light';
 	--font-h2:'Switzer-Light';
-	--font-h3:'Boska-Regular';
+	--font-h3:'Switzer-Light';
 	--font-h4:'JetBrainsMono-Light';
 	--font-ul:'Switzer-Light';
 	--font-p:'Switzer-Light';
@@ -11,9 +11,9 @@
 	
 
 	--base-font-size: 17px;
-	--h1-font-size: calc(3.7 * var(--base-font-size));
-	--h2-font-size: calc(1.7 * var(--base-font-size));
-	--h3-font-size: calc(1.5 * var(--base-font-size));
+	--h1-font-size: calc(4.2 * var(--base-font-size));
+	--h2-font-size: calc(3.7 * var(--base-font-size));
+	--h3-font-size: calc(1.4 * var(--base-font-size));
 	--h4-font-size: var(--base-font-size);
 	--ul-font-size: var(--base-font-size);
 	--blockquote-size: calc(1.8 * var(--base-font-size));
@@ -39,7 +39,8 @@ header {
 }
 
 header > h1{
-	margin: var(--h1-font-size) 0;
+	margin: var(--h1-font-size) 0 calc(.5 * var(--h1-font-size)) 0;
+	text-transform: uppercase;
 }
 
 .author-and-date{
@@ -132,10 +133,10 @@ blockquote{
 
 
 
-h2{
-	font-family: var(--font-h2);
-	font-size: var(--h2-font-size);
-	line-height: calc(1.4 * var(--h2-font-size));
+h3{
+	font-family: var(--font-h3);
+	font-size: var(--h3-font-size);
+	line-height: calc(1.4 * var(--h3-font-size));
 	margin-bottom: calc(1.2* var(--h1-font-size));
 
 	width: auto;
@@ -161,7 +162,7 @@ ul{
 	padding-bottom: var(--spacing);
 	
 	font-size: var(--ul-font-size);
-	line-height: calc(1.2 * var(--h2-font-size));
+	line-height: calc(1.2 * var(--h3-font-size));
 }
 
 p{
