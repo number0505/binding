@@ -1,19 +1,17 @@
 
 
-header > nav{
+header > nav {
   border-bottom: var(--border);
+  padding: 0 var(--base-font-size)
+  margin: 0 -16px;
 }
 
 h1{
-  /* need to be fixed - variables! */
-	margin: var(--spacing) 0 calc(1.2* var(--h1-font-size)) 0;
+  /* need to be fixed - variables! 왜 아래위 간격이 동일하지 않지? */
+	margin: var(--spacing) 0;
   text-align:center;
 }
 
-.title{
-	/* border-top: solid black 1px; */
-	margin-bottom: calc(1.2* var(--h1-font-size));
-}
 
 .section{
 	border-top: solid black 1px;
