@@ -2,13 +2,7 @@ body{
 	margin: var(--base-font-size);
 }
 
-.author-and-date{
-	display: flex;
-	flex-direction: row;
-	text-transform: uppercase;
-	font-family: var(--font-info);
-	font-size: calc(.9 * var(--base-font-size));
-}
+
 .item-author {
   flex: none;
 }

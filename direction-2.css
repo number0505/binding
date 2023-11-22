@@ -7,14 +7,16 @@
 	--font-p:'Switzer-Light';
 	--font-blockquote: 'Boska-Regular';
 	--font-info:'JetBrainsMono-Light';
+  --font-titlenumber:'Switzer-Light';
 
 	--base-font-size: 17px;
-	--h1-font-size: calc(4.7 * var(--base-font-size));
+	--h1-font-size: calc(3.7 * var(--base-font-size));
 	--h2-font-size: calc(1.7 * var(--base-font-size));
 	--h3-font-size: calc(1.5 * var(--base-font-size));
 	--h4-font-size: var(--base-font-size);
 	--ul-font-size: var(--base-font-size);
 	--blockquote-size: calc(1.8 * var(--base-font-size));
+  --titlenumber-size: calc(1.5 * var(--base-font-size));
 
 	--indent-size: 40px;
 	--spacing: calc(2* var(--base-font-size));
@@ -23,24 +25,32 @@
 h1{
   writing-mode: vertical-rl;
   line-height: calc(1.37 * var(--h1-font-size));
-  max-height: 400px;
   border-left: black solid 1px;
 }
 .align-titleline{
   display: flex;
   flex-direction:column;
+  height:900px;
 }
 .titleline{
   border-right: solid black 1px;
-  min-height: 400px;
+  /* min-height: 600px; */
 }
 .author-and-date{
+	display: flex;
+	flex-direction: row;
+	text-transform: uppercase;
+	font-family: var(--font-info);
+	font-size: calc(.9 * var(--base-font-size));
   margin-top: var(--base-font-size);
 }
-
 .title{
 	/* border-top: solid black 1px; */
 	margin-bottom: var(--spacing);
+}
+.titlenumber{
+	font-family: var(--font-titlenumber);
+	font-size: var(--titlenumber-size);
 }
 
 
