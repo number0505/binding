@@ -23,16 +23,18 @@
 }
 
 h1{
-  writing-mode: vertical-rl;
   line-height: calc(1.37 * var(--h1-font-size));
   border-left: black solid 1px;
 }
 .align-titleline{
   display: flex;
-  flex-direction:column;
-  height:900px;
+  flex-direction:row-reverse;
+  flex-grow: 1;
+  
 }
 .titleline{
+  writing-mode: vertical-rl;
+
   border-right: solid black 1px;
   /* min-height: 600px; */
 }
@@ -47,6 +49,7 @@ h1{
 .title{
 	/* border-top: solid black 1px; */
 	margin-bottom: var(--spacing);
+  margin-top: var(--spacing);
 }
 .titlenumber{
 	font-family: var(--font-titlenumber);
