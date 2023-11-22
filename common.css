@@ -17,9 +17,10 @@
 	--h4-font-size: var(--base-font-size);
 	--ul-font-size: var(--base-font-size);
 	--blockquote-size: calc(1.8 * var(--base-font-size));
-  --titlenumber-size: calc(1.5 * var(--base-font-size));
+  --titlenumber-size: calc(1.2 * var(--base-font-size));
 
 	--lh-h1: calc(1.37 * var(--h1-font-size));
+	--lh-titlenumber: calc(1 * var(--titlenumber-size));
 
 	--indent-size: 40px;
 	--spacing: calc(2* var(--base-font-size));
@@ -32,6 +33,12 @@ body{
 	/* margin: var(--base-font-size); */
 }
 
+header > p {
+	display: flex;
+}
+header > p:first-child{
+	flex:auto;
+}
 
 .item-author {
   flex: none;
@@ -41,9 +48,7 @@ body{
   margin-left: auto;
 }
 
-h1{
 
-}
 h1{
 	font-family: var(--font-h1);
 	font-size: var(--h1-font-size);
@@ -63,36 +68,38 @@ h1{
 } */
 
 nav{
-	display: flex;
-	flex-direction:column;
-
 	width: 100%;
-	height: 880px;
+	height: 100%;
 
 	border-top: var(--border);
   border-right: var(--border);
   /* min-height: 600px; */
 }
 
-nav > ul{
+nav > ol{
+	display: flex;
+	flex-direction:column-reverse;
+	flex-wrap: nowrap;
+
 	font-family: var(--font-h1);
 	font-size: var(--h1-font-size);
 	line-height: var(--lh-h1);
 	writing-mode: vertical-rl;
-	
+	align-content: center;
+
 	list-style: none;
 }
+nav > ol > li{
+	flex-grow: 1; 
 
-nav > ul > li > a > span:first-child {
+	border-left: var(--border);
+	padding-top: var(--base-font-size);
+}
+nav > ol > li > a > span:first-child {
 	writing-mode: horizontal-tb;
 }
 
-nav > ul > li{
-	border-left: var(--border);
-	padding-top: var(--base-font-size);
-	
-	/* width: 100%; */
-}
+
 
 .author-and-date{
 	display: flex;
@@ -110,15 +117,14 @@ nav > ul > li{
 .titlenumber{
 	font-family: var(--font-titlenumber);
 	font-size: var(--titlenumber-size);
+	line-height: var(--lh-titlenumber);
 }
 
 
 .section{
   border-top:  var(--border);
 }
-ul{
-	margin-left: var(--indent-size);
-}
+
 blockquote{
 	padding-left: var(--spacing);
   margin: calc(2* var(--spacing)) 0;
@@ -150,12 +156,13 @@ h4{
 ul{
 	list-style-type: decimal;
 	font-family: var(--font-ul);
+
+	margin-left: var(--indent-size);
 	padding-bottom: var(--spacing);
 	
 	font-size: var(--ul-font-size);
 	line-height: calc(1.2 * var(--h2-font-size));
 }
-
 
 p{
 	font-family: var(--font-p);
