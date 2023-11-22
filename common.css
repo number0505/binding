@@ -20,7 +20,7 @@
 	--cite-size: calc(.9 * var(--base-font-size));
   --titlenumber-size: calc(1.2 * var(--base-font-size));
 
-	--lh-h1: calc(1.37 * var(--h1-font-size));
+	--lh-h1: calc(1 * var(--h1-font-size));
 	--lh-h2: calc(1.37 * var(--h2-font-size));
 	--lh-h3: calc(1.5 * var(--h3-font-size));
 	--lh-titlenumber: calc(1 * var(--titlenumber-size));
@@ -50,7 +50,7 @@ header > p{
 header > h1{
 	margin: var(--h1-font-size) 0 calc(.5 * var(--h1-font-size)) 0;
 	text-transform: uppercase;
-	line-height: 100%;
+	line-height: var(--lh-h1);
 }
 
 .smallinfo{
@@ -109,10 +109,11 @@ h1{
   border-top:  var(--border);
 }
 
-
-blockquote{
+.quote{
+	margin-bottom: var(--spacing);
 	padding-left: var(--spacing);
-	border-left: var(--border);
+}
+blockquote{
 	margin-bottom: var(--spacing);
 }
 

@@ -2,8 +2,8 @@
 
 header > nav {
   border-bottom: var(--border);
+  margin: 0 calc(-1 * var(--base-font-size));
   padding: 0 var(--base-font-size);
-  margin: 0 -var(--base-font-size);
 }
 
 h1{
