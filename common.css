@@ -37,8 +37,14 @@ body{
 
 /* should be fixed*/ 
 header {
-	margin: var(--base-font-size);
+	padding: var(--base-font-size);
+	margin-bottom: var(--h1-font-size);
 }
+
+/* should be considered
+header > p{
+	border-bottom: var(--border);
+} */
 
 header > h1{
 	margin: var(--h1-font-size) 0 calc(.5 * var(--h1-font-size)) 0;
@@ -69,9 +75,9 @@ h1{
 
 	width: auto; /* <- ???? */
 	
-	/* delete?
+	/* delete? */
 	-webkit-hyphens: auto; 
-	hyphens: auto;  */
+	hyphens: auto; 
 }
 
 /* .align-titleline{

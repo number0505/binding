@@ -1,0 +1,34 @@
+
+
+header > nav{
+  border-bottom: var(--border);
+}
+
+h1{
+  /* need to be fixed - variables! */
+	margin: var(--spacing) 0 calc(1.2* var(--h1-font-size)) 0;
+  text-align:center;
+}
+
+.title{
+	/* border-top: solid black 1px; */
+	margin-bottom: calc(1.2* var(--h1-font-size));
+}
+
+.section{
+	border-top: solid black 1px;
+}
+h2{
+  text-align:center;
+}
+
+ul{
+	padding-left: var(--indent-size);
+}
+.author-and-date{
+	margin-bottom: var(--base-font-size);
+}
+blockquote{
+	padding-left: var(--spacing);
+  margin: calc(2* var(--spacing)) 0;
+}
