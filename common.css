@@ -8,6 +8,7 @@
 	--font-blockquote: 'Boska-Regular';
 	--font-info:'JetBrainsMono-Light';
   --font-titlenumber:'Switzer-Light';
+	
 
 	--base-font-size: 17px;
 	--h1-font-size: calc(3.7 * var(--base-font-size));
@@ -18,8 +19,12 @@
 	--blockquote-size: calc(1.8 * var(--base-font-size));
   --titlenumber-size: calc(1.5 * var(--base-font-size));
 
+	--lh-h1: calc(1.37 * var(--h1-font-size));
+
 	--indent-size: 40px;
 	--spacing: calc(2* var(--base-font-size));
+
+	--border: solid black 1px;
 }
 
 
@@ -42,27 +47,46 @@ h1{
 h1{
 	font-family: var(--font-h1);
 	font-size: var(--h1-font-size);
+  line-height: var(--lh-h1);
 
-	width: auto;
+	width: auto; /* <- ???? */
 	
+	/* delete?
 	-webkit-hyphens: auto; 
-	hyphens: auto; 
-  line-height: calc(1.37 * var(--h1-font-size));
-  border-left: black solid 1px;
+	hyphens: auto;  */
 }
-.align-titleline{
+
+/* .align-titleline{
   display: flex;
   flex-direction:row-reverse;
   flex-grow: 1;
-  
-}
+} */
+
 nav{
+	display: flex;
+	flex-direction:column;
   writing-mode: vertical-rl;
 
-  border-right: solid black 1px;
+	width: 100%;
+	height: 880px;
+
+	border-top: var(--border);
+  border-right: var(--border);
+	padding-top: var(--spacing)
   /* min-height: 600px; */
 }
 
+nav > ul{
+	font-family: var(--font-h1);
+	font-size: var(--h1-font-size);
+	line-height: var(--lh-h1);
+	
+	list-style: none;
+}
+nav > ul > li{
+	border-left: var(--border);
+	/* width: 100%; */
+}
 
 .author-and-date{
 	display: flex;
@@ -84,7 +108,7 @@ nav{
 
 
 .section{
-  border-top: solid black 1px;
+  border-top:  var(--border);
 }
 ul{
 	margin-left: var(--indent-size);
@@ -108,7 +132,7 @@ h2{
 }
 
 /* aside > h4{
-	border-top: solid black 1px;
+	border-top: var(--border);
 } */
 
 h4{
