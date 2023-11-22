@@ -33,13 +33,22 @@ body{
 	/* margin: var(--base-font-size); */
 }
 
-header > p {
-	display: flex;
-}
-header > p:first-child{
-	flex:auto;
+/* should be fixed*/ 
+header {
+	margin: var(--base-font-size);
 }
 
+header > h1{
+	margin: var(--h1-font-size) 0;
+}
+
+.author-and-date{
+	display: flex;
+	flex-direction: row;
+	text-transform: uppercase;
+	font-family: var(--font-info);
+	font-size: calc(.9 * var(--base-font-size));
+}
 .item-author {
   flex: none;
 }
@@ -72,7 +81,6 @@ nav{
 	height: 100%;
 
 	border-top: var(--border);
-  border-right: var(--border);
   /* min-height: 600px; */
 }
 
@@ -90,25 +98,17 @@ nav > ol{
 	list-style: none;
 }
 nav > ol > li{
-	flex-grow: 1; 
-
 	border-left: var(--border);
 	padding-top: var(--base-font-size);
 }
 nav > ol > li > a > span:first-child {
 	writing-mode: horizontal-tb;
+	
 }
 
 
 
-.author-and-date{
-	display: flex;
-	flex-direction: row;
-	text-transform: uppercase;
-	font-family: var(--font-info);
-	font-size: calc(.9 * var(--base-font-size));
-  margin-top: var(--base-font-size);
-}
+
 .title{
 	/* border-top: solid black 1px; */
 	margin-bottom: var(--spacing);
