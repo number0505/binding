@@ -8,7 +8,7 @@ header > nav {
 
 h1{
   /* need to be fixed - variables! 왜 아래위 간격이 동일하지 않지? */
-	margin: var(--spacing) 0;
+	margin: var(--h1-font-size) 0;
   text-align:center;
 }
 
