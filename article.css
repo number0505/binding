@@ -12,9 +12,6 @@ h1{
   text-align:center;
 }
 
-.space{
-  padding-bottom: var(--h1-font-size);
-}
 .section{
 	border-top: solid black 1px;
 }
@@ -28,7 +25,7 @@ ul{
 .author-and-date{
 	margin-bottom: var(--base-font-size);
 }
-
+/* 
 main{
   margin: var(--base-font-size)
-}
+} */

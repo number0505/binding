@@ -16,7 +16,7 @@
 	--h3-font-size: calc(1.4 * var(--base-font-size));
 	--h4-font-size: var(--base-font-size);
 	--ul-font-size: var(--base-font-size);
-	--blockquote-size: calc(1.8 * var(--base-font-size));
+	--blockquote-size: calc(1.7 * var(--base-font-size));
 	--cite-size: calc(.9 * var(--base-font-size));
   --titlenumber-size: calc(1.2 * var(--base-font-size));
 
@@ -33,6 +33,7 @@
 	--bg-01: rgb(132, 186, 207);
 	--bg-02: rgb(237, 186, 195);
 	--bg-03:	rgb(194, 230, 171);
+	--bg-section: white;
 }
 
 
@@ -40,15 +41,21 @@ body{
 	/* margin: var(--base-font-size); */
 }
 
-/* should be fixed*/ 
+/* should be considered*/ 
 header {
 	padding: var(--base-font-size);
+	/* position: fixed;
+	z-index: -1; */
 }
-
 /* should be considered
 header > p{
 	border-bottom: var(--border);
 } */
+
+
+.space_h1{
+  padding-bottom: var(--h1-font-size);
+}
 
 h1{
 	font-family: var(--font-h1);
@@ -109,11 +116,21 @@ header > h1{
 
 
 .section{
-  border-top:  var(--border);
+	border-top: var(--border);
+	box-shadow: 0 0 30px var(--bg-01);
+	padding: 0 var(--base-font-size) var(--spacing) var(--base-font-size);
+	background-color: var(--bg-section);
 }
+.section_title{
+	margin: 0 calc( -1 * var(--base-font-size));
+	padding: var(--base-font-size) var(--base-font-size) var(--spacing) var(--base-font-size);
+}
+/* .section{
+	margin: calc(2 * var(--spacing)) 0 var(--spacing) 0;
+} */
 
 .quote{
-	margin-bottom: var(--spacing);
+	margin: var(--spacing) 0;
 	padding-left: var(--spacing);
 }
 blockquote{
@@ -139,7 +156,8 @@ h3{
 h4{
 	font-family: var(--font-h4);
 	font-size: var(--h4-font-size);
-	margin-bottom: var(--spacing);
+	/* padding-top: var(--base-font-size);
+	margin-bottom: var(--spacing); */
 }
 
 ul{
@@ -160,9 +178,6 @@ p{
 	margin-bottom: var(--base-font-size);
 }
 
-.section{
-	margin: calc(2 * var(--spacing)) 0 var(--spacing) 0;
-}
 
 blockquote{
 	font-family: var(--font-blockquote);
@@ -197,6 +212,15 @@ blockquote{
        url(fonts/Switzer-Light.woff) format('woff'),
        url(fonts/Switzer-Light.ttf) format('truetype');
        font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Switzer-Medium';
+  src: url(fonts/Switzer-Medium.woff2) format('woff2'),
+       url(fonts/Switzer-Medium.woff) format('woff'),
+       url(fonts/Switzer-Medium.ttf) format('truetype');
+       font-weight: 700;
        font-display: swap;
        font-style: normal;
 }
