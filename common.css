@@ -65,14 +65,12 @@ h1{
 nav{
 	display: flex;
 	flex-direction:column;
-  writing-mode: vertical-rl;
 
 	width: 100%;
 	height: 880px;
 
 	border-top: var(--border);
   border-right: var(--border);
-	padding-top: var(--spacing)
   /* min-height: 600px; */
 }
 
@@ -80,11 +78,19 @@ nav > ul{
 	font-family: var(--font-h1);
 	font-size: var(--h1-font-size);
 	line-height: var(--lh-h1);
+	writing-mode: vertical-rl;
 	
 	list-style: none;
 }
+
+nav > ul > li > a > span:first-child {
+	writing-mode: horizontal-tb;
+}
+
 nav > ul > li{
 	border-left: var(--border);
+	padding-top: var(--base-font-size);
+	
 	/* width: 100%; */
 }
 
