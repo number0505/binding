@@ -18,6 +18,9 @@ nav{
 	align-content: center;
 
 }
+/* h1{
+	font-size: calc(1.5 * var(--h1-font-size));
+} */
 nav > section {
 	border-right: var(--border);
 	padding-top: var(--base-font-size);
