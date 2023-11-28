@@ -18,7 +18,7 @@
 	--base-font-size: 18px;
 	--h1-font-size: calc(3 * var(--base-font-size));
 	--h2-font-size: calc(1.4 * var(--base-font-size));
-	--h3-font-size: var(--base-font-size);
+	--h3-font-size: calc(.8 * var(--base-font-size));
 	--ul-font-size: var(--base-font-size);
 	--blockquote-size: calc(1.3 * var(--base-font-size));
 	--cite-size: calc(.9 * var(--base-font-size));
@@ -31,11 +31,12 @@
 	--lh-p: calc(1.9  * var(--base-font-size));
 	--lh-booknumber: calc(1 * var(--booknumber-size));
 	--lh-book: calc(1.37 * var(--book-size));
-	--lh-cite: calc(1.3 * var(--cite-size));
+	--lh-cite: calc(1.5 * var(--cite-size));
 
 	/* margin, padding */
 	--indent-size: 40px;
-	--spacing: calc(1.5* var(--base-font-size));
+	--spacing: calc(1.3 * var(--base-font-size));
+	--padding-section-title: calc(1.25 * var(--spacing)) var(--base-font-size) 0 calc(.5 * var(--base-font-size));
 
 	/*line*/
 	--border: solid black 1px;
@@ -45,6 +46,10 @@
 	--bg-02: rgb(237, 186, 195);
 	--bg-03:	rgb(194, 230, 171);
 	--bg-section: white;
+	--cite-color: gray;
+
+	--shdw-section: 0 0 30px var(--bg-shadow);
+	--shdw-title: 0 16px 80px var(--bg-03);
 }
 
 
@@ -54,9 +59,9 @@ body{
 
 /* should be considered*/
 header {
-	padding: var(--base-font-size) var(--base-font-size) calc(2 * var(--base-font-size));
-	/* position: fixed;
-	z-index: -1; */
+	padding: var(--base-font-size) var(--base-font-size) calc(3	 * var(--base-font-size));
+	position: sticky;
+	z-index: -1;
 }
 /* should be considered
 header > p{
@@ -64,7 +69,7 @@ header > p{
 } */
 
 
-header > nav {
+header nav{
   border-bottom: var(--border);
   margin: 0 calc(-1 * var(--base-font-size)); 
   padding: 0 var(--base-font-size) calc(.5 * var(--cite-size));
@@ -125,8 +130,6 @@ p.smallinfo{
 /* bookspine is move out to index.css */
 
 
-
-
 .book{
 	/* border-top: solid black 1px; */
 	/* margin-bottom: var(--spacing);*/
@@ -141,21 +144,37 @@ p.smallinfo{
 	font-size: var(--booknumber-size);
 	line-height: var(--lh-booknumber);
 }
-
+/*여기옆에 인덱스 달고싶어!!!
+*/
 .section{
 	border-top: var(--border);
-	box-shadow: 0 0 30px var(--bg-shadow);
+	box-shadow: var(--shdw-section);
 	padding: 0 var(--base-font-size) var(--spacing) var(--base-font-size);
 	background-color: var(--bg-section);
+
+	display: flex;
+	flex-wrap: nowrap; /* Default. */
+	flex-direction: row-reverse;
+	gap: 10px;
+	
 }
 .section_title{
 	margin: 0 calc( -1 * var(--base-font-size));
-	padding: calc(.5 * var(--base-font-size)) var(--base-font-size) var(--spacing);
+	padding:  var(--padding-section-title);
+  position: sticky;
+  top: 0;
+	background-color: var(--bg-section);
+	box-shadow: var(-shdw-title);
+
+	border-left: var(--border);
+	border-bottom: var(--border);
+	writing-mode: vertical-lr;
+	top: 0;
+	left: 0;
 }
 /* .section{
 	margin: calc(2 * var(--spacing)) 0 var(--spacing) 0;
 } */
-
 
 
 h2{
@@ -173,6 +192,10 @@ h2{
 	border-top: var(--border);
 } */
 
+.contents{
+	padding-top: var(--spacing);
+	margin-right: var(--spacing);
+}
 h3{
 	font-family: var(--font-h3);
 	font-size: var(--h3-font-size);
@@ -184,7 +207,6 @@ ul{
 	list-style-type: decimal;
 	font-family: var(--font-ul);
 
-	margin-left: var(--indent-size);
 	padding-bottom: var(--spacing);
 
 	font-size: var(--ul-font-size);
