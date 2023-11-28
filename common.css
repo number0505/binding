@@ -40,8 +40,9 @@
 	--base-padding: 16px;
 	--indent-size: 40px;
 	--spacing: calc(1.3 * var(--base-padding));
-	--padding-section: 0 var(--base-padding) var(--spacing) var(--base-padding);
+	--padding-section: var(--spacing) var(--base-padding);
 	--padding-section-title: calc(1.25 * var(--spacing)) var(--base-padding) calc(1.25 * var(--spacing)) calc(.5 * var(--base-padding));
+	--margin-section-title: calc( -1 * var(--spacing)) calc( -1 * var(--spacing)) 0 calc( -1 * var(--spacing));
 
 	/*line*/
 	--border: solid black 1px;
@@ -158,6 +159,7 @@ p.smallinfo{
 .section{
 	border-top: var(--border);
 	box-shadow: var(--shdw-section);
+
 	padding: var(--padding-section);
 	background-color: var(--bg-section);
 
@@ -168,13 +170,12 @@ p.smallinfo{
 	
 }
 .section_title{
-	margin: 0 calc( -1 * var(--base-font-size));
-
+	margin: var(--margin-section-title);
 	background-color: var(--bg-section);
 	box-shadow: var(-shdw-title);
 
 	border-left: var(--border);
-	border-bottom: var(--border);
+
 	top: 0;
 	left: 0;
 }
@@ -185,6 +186,8 @@ p.smallinfo{
 	position: sticky;
 	top: 0;
 }
+
+
 /* .section{
 	margin: calc(2 * var(--spacing)) 0 var(--spacing) 0;
 } */
@@ -202,13 +205,18 @@ h2{
 }
 
 /* aside > h3{
-	border-top: var(--border);
+	border-top: var(--border);ss
 } */
 
 .contents{
-	padding-top: var(--spacing);
+	/* padding: calc( 2 * var(--spacing)) 0; */
 	margin-right: var(--spacing);
 }
+.contents:first-child{/*이거 어떻게 해야해 ㅠㅠ*/
+	margin: 0px;
+	padding-top: 0px;
+}
+
 h3{
 	font-family: var(--font-h3);
 	font-size: var(--h3-font-size);
@@ -220,16 +228,22 @@ ul{
 	list-style-type: decimal;
 	font-family: var(--font-ul);
 
-	padding-bottom: var(--spacing);
-	padding-left: var(--indent-size);
-
-
 	font-size: var(--ul-font-size);
 	line-height: calc(1.2 * var(--h2-font-size));
+
+	padding: calc( 2 * var(--spacing)) 0 calc( 2 * var(--spacing)) calc(var(--base-font-size) + var(--spacing));
+	padding-inline-start: 80px;
 }
+aside ul{
+	text-align: left;
+	/* padding: calc( 2 * var(--spacing)) 0 calc( 2 * var(--spacing)) calc(var(--base-font-size) + var(--spacing)); */
+
+}
+/* list in the body text */
 .contents ul{
 	list-style-type: square;
-	padding-left: var(--spacing);
+	/* padding: calc( 2 * var(--spacing)) 0 calc( 2 * var(--spacing)) calc(var(--base-font-size) + var(--spacing)); */
+
 }
 
 p{
@@ -242,7 +256,7 @@ strong{
 	font-weight: var(--strong-weight);
 }
 .quote{
-	margin: var(--spacing) 0;
+	margin: calc(2 * var(--spacing)) 0;
 	padding-left: var(--spacing);
 }
 blockquote{

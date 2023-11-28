@@ -9,9 +9,7 @@ h1{
 .section{
 	border-top: solid black 1px;
 }
-header h2{
-  text-align:center;
-}
+
 
 /* 지울지말지 나중에 번호있는 영역 옆에가 너무 붕뜸
 ul {
