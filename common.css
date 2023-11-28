@@ -58,15 +58,10 @@
 }
 
 
-body{
-	/* margin: var(--base-font-size); */
-}
 
 /* should be considered*/
 header {
-	padding: var(--base-font-size) var(--base-font-size) calc(3	 * var(--base-font-size));
-	position: sticky;
-	z-index: -1;
+	padding: var(--base-padding) var(--base-padding) calc(3	 * var(--base-padding));
 }
 /* should be considered
 header > p{
@@ -76,8 +71,8 @@ header > p{
 
 header nav{
   border-bottom: var(--border);
-  margin: 0 calc(-1 * var(--base-font-size)); 
-  padding: 0 var(--base-font-size) calc(.5 * var(--nav-size));
+  margin: 0 calc(-1 * var(--base-padding)); 
+  padding: 0 var(--base-padding) calc(.5 * var(--nav-size));
   /* position: fixed; */
 }
 
@@ -124,7 +119,6 @@ header > h1{
 
 /*footer 에 쓰임*/
 p.smallinfo{
-	padding: var(--base-font-size) 0;
 }
 
 .item-author {
@@ -190,7 +184,6 @@ p.smallinfo{
 	writing-mode: vertical-lr;
 	position: sticky;
 	top: 0;
-
 }
 /* .section{
 	margin: calc(2 * var(--spacing)) 0 var(--spacing) 0;
@@ -264,6 +257,18 @@ blockquote{
 	font-size: calc(.9 * var(--base-font-size));
 	margin: var(--base-font-size) 0;
 	line-height: calc(1.2 * var(--base-font-size));
+}
+
+footer{
+	position:fixed;
+	bottom: 0;
+	background-color: var(--bg-section);
+
+	padding: var(--base-padding) 0;
+	border-top: var(--border);
+  margin: 0 calc(-1 * var(--base-font-size)); 
+  padding: var(--base-padding) var(--base-padding) calc(.5 * var(--nav-size));
+
 }
 
 
