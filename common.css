@@ -1,4 +1,5 @@
 :root{
+	/* typeface */
 	--font-h1:'Switzer-Light';
 	--font-h2:'Switzer-Light';
 	--font-h3:'Switzer-Light';
@@ -9,29 +10,35 @@
 	--font-info:'JetBrainsMono-Light';
   --font-titlenumber:'Switzer-Light';
 
+	/* font weight */
 	--strong-weight: 900;
 	
-
+	/* font size */
 	--base-font-size: 17px;
 	--h1-font-size: calc(3 * var(--base-font-size));
-	/* --book-font-size: calc(3.7 * var(--base-font-size)); */
 	--h2-font-size: calc(1.4 * var(--base-font-size));
 	--h4-font-size: var(--base-font-size);
 	--ul-font-size: var(--base-font-size);
 	--blockquote-size: calc(1.7 * var(--base-font-size));
 	--cite-size: calc(.9 * var(--base-font-size));
   --titlenumber-size: calc(1.2 * var(--base-font-size));
+	--book-font-size: calc(3.7 * var(--base-font-size));
 
+	/* line height */
 	--lh-h1: calc(1 * var(--h1-font-size));
 	--lh-book: calc(1.37 * var(--h2-font-size));
 	--lh-h3: calc(1.5 * var(--h3-font-size));
 	--lh-titlenumber: calc(1 * var(--titlenumber-size));
 	--lh-cite: calc(1.3 * var(--cite-size));
 
+	/* margin, padding */
 	--indent-size: 40px;
 	--spacing: calc(1.5* var(--base-font-size));
 
+	/*line*/
 	--border: solid black 1px;
+
+	/*color*/
 	--bg-01: rgb(132, 186, 207);
 	--bg-02: rgb(237, 186, 195);
 	--bg-03:	rgb(194, 230, 171);
