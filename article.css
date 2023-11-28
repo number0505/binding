@@ -1,12 +1,5 @@
 
 
-header > nav {
-  border-bottom: var(--border);
-  margin: 0 calc(-1 * var(--base-font-size)); 
-  padding: 0 var(--base-font-size);
-  /* position: fixed; */
-}
-
 h1{
   /* need to be fixed - variables! 왜 아래위 간격이 동일하지 않지? */
 	margin: var(--h1-font-size) 0;
