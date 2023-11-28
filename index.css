@@ -11,12 +11,6 @@ nav{
 	flex-wrap: nowrap;
 	writing-mode: vertical-rl;
 
-
-	font-family: var(--font-h2); /* h2로 바꾸는 게 낫지 않을까? */
-	font-size: var(--h2-font-size);
-	line-height: var(--lh-h2);
-	align-content: center;
-
 }
 /* h1{
 	font-size: calc(1.5 * var(--h1-font-size));
