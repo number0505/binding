@@ -19,7 +19,8 @@ nav > section {
 	border-right: var(--border);
 	padding-top: var(--base-font-size);
 
-	flex:1;
+	flex: 1;
+
 }
 nav > section:last-child{
 	border-right: none;

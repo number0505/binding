@@ -13,9 +13,9 @@
 
 	/* font weight */
 	--strong-weight: 900;
-	
+
 	/* font size */
-	--base-font-size: 17px;
+	--base-font-size: 18px;
 	--h1-font-size: calc(3 * var(--base-font-size));
 	--h2-font-size: calc(1.4 * var(--base-font-size));
 	--h3-font-size: var(--base-font-size);
@@ -23,13 +23,13 @@
 	--blockquote-size: calc(1.7 * var(--base-font-size));
 	--cite-size: calc(.9 * var(--base-font-size));
   --booknumber-size: calc(1.2 * var(--base-font-size));
-	--book-size: calc(3.7 * var(--base-font-size));
+	--book-size: calc(4 * var(--base-font-size));
 
 	/* line height */
 	--lh-h1: calc(1 * var(--h1-font-size));
-	--lh-book: calc(1.37 * var(--h2-font-size));
 	--lh-h2: calc(1.5 * var(--h2-font-size));
 	--lh-booknumber: calc(1 * var(--booknumber-size));
+	--lh-book: calc(1.37 * var(--book-size));
 	--lh-cite: calc(1.3 * var(--cite-size));
 
 	/* margin, padding */
@@ -51,7 +51,7 @@ body{
 	/* margin: var(--base-font-size); */
 }
 
-/* should be considered*/ 
+/* should be considered*/
 header {
 	padding: var(--base-font-size);
 	/* position: fixed;
@@ -73,10 +73,10 @@ h1{
   line-height: var(--lh-h1);
 
 	width: auto; /* <- ???? */
-	
+
 	/* delete? */
-	-webkit-hyphens: auto; 
-	hyphens: auto; 
+	-webkit-hyphens: auto;
+	hyphens: auto;
 }
 header > h1{
 	margin: var(--h1-font-size) 0 calc(.5 * var(--h1-font-size)) 0;
@@ -115,13 +115,12 @@ header > h1{
 
 .book{
 	/* border-top: solid black 1px; */
-	/* margin-bottom: var(--spacing);
-  margin-top: var(--spacing); */
-	font-size: val(--book-size);
-	font-family: var(--font-h2); /* h2로 바꾸는 게 낫지 않을까? */
-	font-size: var(--h2-font-size);
-	line-height: var(--lh-h2);
-	align-content: center;
+	/* margin-bottom: var(--spacing);*/
+  margin-top: var(--spacing);
+	font-size: var(--book-size);
+	font-family: var(--font-book); /* h2로 바꾸는 게 낫지 않을까? */
+	
+	/* line-height: var(--lh-book); */
 }
 .booknumber{
 	font-family: var(--font-booknumber);
@@ -140,7 +139,7 @@ header > h1{
 	padding: var(--base-font-size) var(--base-font-size) var(--spacing) var(--base-font-size);
 }
 /* .section{
-	margin: calc(2 * var(--spacing)) 0 var(--spacing) 0;	
+	margin: calc(2 * var(--spacing)) 0 var(--spacing) 0;
 } */
 
 .quote{
@@ -159,8 +158,8 @@ h2{
 	margin-bottom: var(--spacing);
 
 	width: auto;
-	-webkit-hyphens: auto; 
-	hyphens: auto; 
+	-webkit-hyphens: auto;
+	hyphens: auto;
 }
 
 /* aside > h3{
@@ -180,7 +179,7 @@ ul{
 
 	margin-left: var(--indent-size);
 	padding-bottom: var(--spacing);
-	
+
 	font-size: var(--ul-font-size);
 	line-height: calc(1.2 * var(--h2-font-size));
 }
