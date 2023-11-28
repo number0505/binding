@@ -28,6 +28,7 @@
 	/* line height */
 	--lh-h1: calc(1 * var(--h1-font-size));
 	--lh-h2: calc(1.5 * var(--h2-font-size));
+	--lh-p: calc(1.9  * var(--base-font-size));
 	--lh-booknumber: calc(1 * var(--booknumber-size));
 	--lh-book: calc(1.37 * var(--book-size));
 	--lh-cite: calc(1.3 * var(--cite-size));
@@ -53,7 +54,7 @@ body{
 
 /* should be considered*/
 header {
-	padding: calc(2 * var(--base-font-size)) var(--base-font-size) ;
+	padding: var(--base-font-size) var(--base-font-size) calc(2 * var(--base-font-size));
 	/* position: fixed;
 	z-index: -1; */
 }
@@ -90,6 +91,7 @@ header > h1{
 	margin: var(--h1-font-size) 0 calc(.5 * var(--h1-font-size));
 	text-transform: uppercase;
 	line-height: var(--lh-h1);
+	
 }
 
 .smallinfo{
@@ -99,6 +101,10 @@ header > h1{
 	font-family: var(--font-info);
 	font-size: var(--cite-size);
 	line-height: var(--lh-cite)
+}
+
+p.smallinfo{
+	padding: var(--base-font-size) 0;
 }
 
 .item-author {
@@ -192,7 +198,7 @@ ul{
 p{
 	font-family: var(--font-p);
 	font-size: var(--base-font-size);
-	line-height: calc(1.8  * var(--base-font-size));
+	line-height: var(--lh-p);
 	margin-bottom: var(--base-font-size);
 }
 strong{
