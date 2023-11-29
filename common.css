@@ -140,6 +140,7 @@ header > h1{
 
 /*footer 에 쓰임*/
 p.smallinfo{
+	padding: var(--base-padding) 0;
 }
 /* 
 .item-author {
