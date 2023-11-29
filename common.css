@@ -42,7 +42,7 @@
 
 	/* margin, padding */
 	--base-padding: 16px;
-	--indent-size: 40px;
+	--space-size: 40px;
 	--gap: 10px;
 	--spacing: calc(1.3 * var(--base-padding));
 	--padding-section: calc(3 * var(--spacing)) calc(var(--cite-size) + var(--base-padding)) calc(3 * var(--spacing)) var(--base-padding) ;
@@ -90,6 +90,9 @@ aside a[href^='#']::after {
 	font-size: var(--cite-size);
 }
 
+.space{
+	padding-top: var(--space-size);
+}
 
 .space_h1{
   padding-bottom: var(--h1-font-size);
