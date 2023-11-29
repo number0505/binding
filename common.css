@@ -54,13 +54,17 @@
 	--border: solid black 1px;
 
 	/*color*/
-	--bg-01: rgb(132, 186, 207);
+	--bg-01: rgb(194, 230, 171);
 	--bg-02: rgb(237, 186, 195);
-	--bg-03:	rgb(194, 230, 171);
+	--bg-03: rgb(132, 186, 207);	
 	--bg-section: white;
 	--cite-color: gray;
 
 	--shdw-section: 0 0 30px var(--bg-shadow);
+	--shdw-article01: 0 0 30px var(--bg-01);
+	--shdw-article02: 0 0 30px var(--bg-02);
+	--shdw-article03: 0 0 30px var(--bg-03);
+
 	--shdw-pullquote: inset 0 0 3em 5em var(--bg-section);
 	/* background: red; padding: 2em */
 
@@ -201,7 +205,19 @@ p.smallinfo{
 
 }
 
-.bookspine:hover { 	box-shadow: var(--shdw-section);}
+.bookspine .article01:hover { 	
+	box-shadow: var(--shdw-article01);}
+.bookspine .article02:hover { 	
+	box-shadow: var(--shdw-article02);}
+.bookspine .article03:hover { 	
+	box-shadow: var(--shdw-article03);}
+/* .bookspine .article01:hover { 	
+	box-shadow: var(--bg-01);
+} */
+/* a:hover { 	
+box-shadow: var(--shdw-section);
+background-color: var(--shdw-section);} */
+
 
 .book{
 	/* border-top: solid black 1px; */
