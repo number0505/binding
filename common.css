@@ -409,7 +409,11 @@ blockquote{
 
 @media (min-width: 768px) {
 	:root {
+		--book-size: calc(2.5 * var(--base-font-size));
+
+
 		--shdw-pullquote: inset 0 0 20em 8em var(--bg-section);
+
 	}
 
 
@@ -431,7 +435,9 @@ blockquote{
 		height: 100vh;
 	}
 
-
+	.padding_cover{
+		padding: 0 calc(3* var(--base-padding)) var(--space-size);
+	}
 	.bookspine section {
 		border-right: none;
 		border-left: var(--border);
@@ -465,7 +471,9 @@ blockquote{
 
 		--shdw-pullquote: inset 0 0 30em 8em var(--bg-section);
 	}
-
+	.padding_cover{
+		padding: 0 calc(3* var(--base-padding)) var(--space-size);
+	}
 	.bookspine{
 		top: 67px;
 		right: 0;
