@@ -83,7 +83,6 @@ header nav{
   border-bottom: var(--border);
   margin: 0 calc(-1 * var(--base-padding)); 
   padding: var(--base-padding) calc(2* var(--base-padding));
-	z-index: 3;
 }
 
 .padding_cover{
