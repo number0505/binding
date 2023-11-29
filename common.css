@@ -31,7 +31,7 @@
 	/* line height */
 	--lh-h1: calc(1 * var(--h1-font-size));
 	--lh-h2: calc(1.6 * var(--h2-font-size));
-	--lh-p: calc(1.9  * var(--base-font-size));
+	--lh-p: calc(1.8  * var(--base-font-size));
 	--lh-strong: calc(1.7 * var(--strong-size));
 
 	--lh-booknumber: calc(1 * var(--booknumber-size));
@@ -259,6 +259,7 @@ h3{
 	margin-bottom: var(--spacing); */
 }
 
+
 ul{
 	font-family: var(--font-ul);
 
@@ -279,13 +280,15 @@ aside .decimal{
 .decimal{
 	list-style-type: decimal;
 	text-align: left;
-
 }
 .square{
 	list-style-type: square;
 	text-align: left;
 }
+.longlist li{
+	padding-bottom: var(--spacing);
 
+}
  /*li의 마지막 아이만 패딩 없게 하고싶은데 왜 안되냐고.. */
  li:last-child{
 	padding-bottom: 0;
