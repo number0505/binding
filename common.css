@@ -45,10 +45,10 @@
 	--indent-size: 40px;
 	--gap: 10px;
 	--spacing: calc(1.3 * var(--base-padding));
-	--padding-section: var(--spacing) var(--base-padding);
+	--padding-section: calc(3 * var(--spacing)) calc(var(--cite-size) + var(--base-padding)) calc(3 * var(--spacing)) var(--base-padding) ;
 	--padding-section-title: calc(1.25 * var(--spacing)) var(--base-padding) calc(1.25 * var(--spacing)) calc(.5 * var(--base-padding));
 	--padding-top: var(--base-padding) var(--base-padding) calc(1.25 * var(--spacing)) calc(.5 * var(--base-padding));
-	--margin-section-title: calc( -1 * var(--spacing)) calc( -1 * var(--spacing)) 0 calc( -1 * var(--spacing));
+	--margin-section-title: calc( -3 * var(--spacing)) calc( -1 * (var(--cite-size) + var(--base-padding))) calc(-2 * var(--spacing)) calc( -1 * var(--spacing));
 
 	/*line*/
 	--border: solid black 1px;
@@ -66,17 +66,6 @@
 
 }
 
-/* a[href^='#']::after { &nbsp&#8628; } */
-
-a[href^='#']::after { 
-	content: ' \2198';
-	font-size: var(--cite-size);
-}
-
-.unicode{
-	font-family: var(--font-p);
-	font-size: var(--cite-size);
-}
 
 /* should be considered*/
 header {
@@ -94,6 +83,13 @@ header nav{
   padding: 0 var(--base-padding) var(--base-padding);
   /* position: fixed; */
 }
+
+
+aside a[href^='#']::after { 
+	content: '\2192';
+	font-size: var(--cite-size);
+}
+
 
 .space_h1{
   padding-bottom: var(--h1-font-size);
@@ -271,10 +267,11 @@ ul{
 
 	padding: calc( 2 * var(--spacing)) 0 calc( 2 * var(--spacing));
 	padding-inline-start: calc( 2* var(--base-font-size));
-	margin-bottom: var(--spacing);
+	margin-bottom: var(--base-font-size);
 }
-aside .decimal li{
-	/* text-decoration: underline; */
+
+aside .decimal{
+	margin-bottom: 0;
 }
 .decimal li {
 	padding-bottom: var(--spacing);
@@ -287,8 +284,13 @@ aside .decimal li{
 .square{
 	list-style-type: square;
 	text-align: left;
-
 }
+
+ /*li의 마지막 아이만 패딩 없게 하고싶은데 왜 안되냐고.. */
+ li:last-child{
+	padding-bottom: 0;
+}
+
 aside ul{
 	/* padding: calc( 2 * var(--spacing)) 0 calc( 2 * var(--spacing)) calc(var(--base-font-size) + var(--spacing)); */
 
@@ -299,6 +301,9 @@ aside ul{
 	/* padding: calc( 2 * var(--spacing)) 0 calc( 2 * var(--spacing)) calc(var(--base-font-size) + var(--spacing));
 } */
 
+/* ul:not(:last-child) {
+	margin-right: 10px;
+} */
 p{
 	font-family: var(--font-p);
 	font-size: var(--base-font-size);
@@ -312,7 +317,6 @@ p{
 }
 .pullquote{
 	text-align: center;
-	padding-left: 0;
 	margin: 0;
 	padding: calc(3 * var(--spacing)) 0;
 
