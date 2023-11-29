@@ -20,14 +20,15 @@ header{
 	height: 90vh;	
 }
 
-
 h1{
 	font-size: calc(1.5 * var(--h1-font-size));
 	text-align: left;
 }
 
-@media (min-width: 1028px) {
+@media (min-width: 728px) {
 	
-	.grid{	position: fixed;}
+	.grid{
+		position: fixed;
+	}
 
 }

@@ -3,9 +3,7 @@
 }
 
 @media (min-width: 768px) {
-	:root {
 
-	}
   header{
     position: fixed;
     top: 0;
@@ -21,16 +19,4 @@
     display: flex;
   }
 }
-
-@media (min-width: 1028px) {
-	:root {
-
-	}
-
-}
-
-/* .section{
-	border-top: solid black 1px;
-} */
-
 

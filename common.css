@@ -65,14 +65,10 @@
 	--shdw-article02: 0 0 30px var(--bg-02);
 	--shdw-article03: 0 0 30px var(--bg-03);
 
-	--shdw-pullquote: inset 0 0 3em 5em var(--bg-section);
-	/* background: red; padding: 2em */
+	--shdw-pullquote: inset 0 0 10em 7em var(--bg-section);
 
 }
-/* should be considered
-header > p{
-	border-bottom: var(--border);
-} */
+
 
 
 main{
@@ -115,7 +111,7 @@ h1{
 
 	margin: var(--h1-font-size) 0;
 
-	width: auto; /* <- ???? */
+	width: auto; 
 
 	/* delete? */
 	-webkit-hyphens: auto;
@@ -158,24 +154,6 @@ header > h1{
 p.smallinfo{
 	padding: var(--base-padding) 0;
 }
-/* 
-.item-author {
-  flex: none;
-}
-.item-date {
-  margin-left: auto;
-} */
-
-
-
-/* .align-titleline{
-  display: flex;
-  flex-direction:row-reverse;
-  flex-grow: 1;
-} */
-
-/* bookspine is move out to index.css */
-
 
 
 
@@ -192,7 +170,7 @@ p.smallinfo{
 	
 	background-color: var(--bg-section);
 
-	z-index: 2;
+	z-index: 1;
 }
 
 .bookspine section {
@@ -214,13 +192,9 @@ p.smallinfo{
 
 
 .book{
-	/* border-top: solid black 1px; */
-	/* margin-bottom: var(--spacing);*/
   margin-top: var(--spacing);
 	font-size: var(--book-size);
-	font-family: var(--font-book); /* h2로 바꾸는 게 낫지 않을까? */
-	
-	/* line-height: var(--lh-book); */
+	font-family: var(--font-book); 
 }
 .booknumber{
 	font-family: var(--font-booknumber);
@@ -237,7 +211,7 @@ p.smallinfo{
 	background-color: var(--bg-section);
 
 	display: flex;
-	flex-wrap: nowrap; /* Default. */
+	flex-wrap: nowrap;
 	flex-direction: row-reverse;
 	gap: var(--gap);
 	
@@ -258,7 +232,6 @@ p.smallinfo{
 .rotation{
 	padding: var(--padding-section-title);
 	writing-mode: vertical-lr;
-
 }
 .top{
 	position: sticky;
@@ -271,9 +244,7 @@ p.smallinfo{
 	bottom: 0;
 }
 
-/* .section{
-	margin: calc(2 * var(--spacing)) 0 var(--spacing) 0;
-} */
+
 
 
 h2{
@@ -287,15 +258,12 @@ h2{
 	hyphens: auto;
 }
 
-/* aside > h3{
-	border-top: var(--border);ss
-} */
+
 
 .contents{
-	/* padding: calc( 2 * var(--spacing)) 0; */
 	margin-right: var(--spacing);
 }
-.contents:first-child{/*이거 어떻게 해야해 ㅠㅠ*/
+.contents:first-child{
 	margin: 0px;
 	padding-top: 0px;
 }
@@ -311,8 +279,6 @@ div .strong{
 h3{
 	font-family: var(--font-h3);
 	font-size: var(--h3-font-size);
-	/* padding-top: var(--base-font-size);
-	margin-bottom: var(--spacing); */
 }
 .padding-btm{
 	padding-bottom: var(--base-padding);
@@ -348,24 +314,11 @@ aside .decimal{
 	padding-bottom: var(--spacing);
 
 }
- /*li의 마지막 아이만 패딩 없게 하고싶은데 왜 안되냐고.. */
- li:last-child{
+
+li:last-child{
 	padding-bottom: 0;
 }
 
-aside ul{
-	/* padding: calc( 2 * var(--spacing)) 0 calc( 2 * var(--spacing)) calc(var(--base-font-size) + var(--spacing)); */
-
-}
-/* list in the body text */
-/* .contents ul {
-	list-style-type: square; */
-	/* padding: calc( 2 * var(--spacing)) 0 calc( 2 * var(--spacing)) calc(var(--base-font-size) + var(--spacing));
-} */
-
-/* ul:not(:last-child) {
-	margin-right: 10px;
-} */
 p{
 	font-family: var(--font-p);
 	font-size: var(--base-font-size);
@@ -385,8 +338,6 @@ p{
 
 	background-color: var(--bg-shadow);
 	box-shadow: var(--shdw-pullquote) ;
-
-/* background: red; padding: 2em */
 }
 
 blockquote{
@@ -405,30 +356,19 @@ blockquote{
 }
 
 
-
-
 @media (min-width: 768px) {
 	:root {
 		--book-size: calc(2.5 * var(--base-font-size));
 
-
+		--padding-section-title: calc(1.25 * var(--spacing)) calc(.75 * var(--base-padding));
+		
 		--shdw-pullquote: inset 0 0 20em 8em var(--bg-section);
-
 	}
-
 
 	.grid{
 		display: grid;
 		grid-template-columns: 2fr 1fr;
-	}
-	.bookspine{
-		height: 100vh;
-			
-		border-top: none;
-		border-bottom: none;
 
-		position: sticky;
-		top: 56px;
 	}
 
 	body{
@@ -437,6 +377,16 @@ blockquote{
 
 	.padding_cover{
 		padding: 0 calc(3* var(--base-padding)) var(--space-size);
+	}
+
+		.bookspine{
+		height: 92vh;
+			
+		border-top: none;
+		border-bottom: none;
+
+		position: sticky;
+		top: 56px;
 	}
 	.bookspine section {
 		border-right: none;
@@ -450,12 +400,11 @@ blockquote{
 	.top{
 		top:56px;
 	}
+
 	.contents{
 		max-width: 600px;
 		padding-right: var(--base-padding);
 	}
-
-
 }
 
 @media (min-width: 1024px) {
@@ -471,9 +420,11 @@ blockquote{
 
 		--shdw-pullquote: inset 0 0 30em 8em var(--bg-section);
 	}
+
 	.padding_cover{
 		padding: 0 calc(3* var(--base-padding)) var(--space-size);
 	}
+
 	.bookspine{
 		top: 67px;
 		right: 0;
@@ -484,21 +435,14 @@ blockquote{
 		box-shadow: var(--shdw-article02);}
 	.bookspine .article03:hover { 	
 		box-shadow: var(--shdw-article03);}
-
+	
+	.contents{
+		padding-right: calc(3*var(--base-padding));
+	}
 
 }
 
 /* Welcome to the font world */
-
-@font-face {
-  font-family: 'Boska-Regular';
-  src: url(fonts/Boska-Regular.woff2) format('woff2'),
-       url(fonts/Boska-Regular.woff) format('woff'),
-       url(fonts/Boska-Regular.ttf) format('truetype');
-       font-weight: 400;
-       font-display: swap;
-       font-style: normal;
-}
 
 @font-face {
   font-family: 'Switzer-Light';
@@ -531,38 +475,11 @@ blockquote{
 }
 
 @font-face {
-  font-family: 'Zodiak-ThinItalic';
-  src: url(fonts/Zodiak-ThinItalic.woff2) format('woff2'),
-       url(fonts/odiak-ThinItalic.woff) format('woff'),
-       url(fonts/Zodiak-ThinItalic.ttf) format('truetype');
-       font-weight: 100;
-       font-display: swap;
-       font-style: italic;
-}
-@font-face {
-  font-family: 'Zodiak-LightItalic';
-  src: url(fonts/Zodiak-LightItalic.woff2) format('woff2'),
-       url(fonts/odiak-LightItalic.woff) format('woff'),
-       url(fonts/Zodiak-LightItalic.ttf) format('truetype');
-       font-weight: 300;
-       font-display: swap;
-       font-style: italic;
-}
-@font-face {
   font-family: 'JetBrainsMono-Light';
   src: url(fonts/JetBrainsMono-Light.woff2) format('woff2'),
        url(fonts/JetBrainsMono-Light.woff) format('woff'),
        url(fonts/JetBrainsMono-Light.ttf) format('truetype');
        font-weight: 100;
-       font-display: swap;
-       font-style: normal;
-}
-@font-face {
-  font-family: 'PlusJakartaSans-Light';
-  src: url(fonts/PlusJakartaSans-Light.woff2) format('woff2'),
-       url(fonts/PlusJakartaSans-Light.woff) format('woff'),
-       url(fonts/PlusJakartaSans-Light.ttf) format('truetype');
-       font-weight: 300;
        font-display: swap;
        font-style: normal;
 }
