@@ -1,8 +1,23 @@
+@media (min-width: 768px) {
+	:root {
 
+	}
+	h2{
+		text-align: center;
+  }
+}
 
-h1{
-  /* need to be fixed - variables! 왜 아래위 간격이 동일하지 않지? */
-;
+@media (min-width: 1028px) {
+	:root {
+
+	}
+  header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    
+    background-color: var(--bg-section);
+  }
 }
 
 .section{
@@ -10,14 +25,3 @@ h1{
 }
 
 
-/* 지울지말지 나중에 번호있는 영역 옆에가 너무 붕뜸
-ul {
-  padding-left: var(--indent-size);
-} */
-.author-and-date{
-	margin-bottom: var(--base-font-size);
-}
-/* 
-main{
-  margin: var(--base-font-size)
-} */
