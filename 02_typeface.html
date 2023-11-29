@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>home</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="reset.css" rel="stylesheet">
-        <link href="common.css" rel="stylesheet">
-    
-        <link href="article.css" rel="stylesheet">
-        <link href="article_02.css" rel="stylesheet">
-    </head>
+	<head>
+			<title>home</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="reset.css" rel="stylesheet">
+			<link href="common.css" rel="stylesheet">
+	
+			<link href="article.css" rel="stylesheet">
+			<link href="article_02.css" rel="stylesheet">
+	</head>
 
-    <body id="page-top">
-			<header>
-				<nav class="smallinfo">
-						<span><a href="index.html">home</a></span>
-						<span><a href="https://www.typotheque.com/articles/typeface-as-programme">article</a></span>
-				</nav>
-				<div class="space"></div>
-				<h1>
-						<!-- need to be fixed -->
-						<div>Typeface</div>
-						<div>As</div>
-						<div>Programme</div>
-				</h1>
-				<div class="space_h1"></div>
-				<p class="smallinfo">
-						<span>Jürg Lehni</span>
-						<span>Apr 2011</span>
-				</p>
-				<!-- source of article? -->
-				<div class="space_h1"></div>
-				<h2>
-					The exploration of the technical aspects of ​type design and ​font software.				
-				</h2>
-				<div class="space"></div>
+	<body id="page-top">
+		<header>
+			<nav class="smallinfo">
+					<span><a href="index.html">home</a></span>
+					<span><a href="https://www.typotheque.com/articles/typeface-as-programme">article</a></span>
+			</nav>
+		</header>
 
-			</header>
+		<main class="grid">
+			<section class="bodytext">
+				<div class="padding_cover">
+					<div class="space"></div>
+						<h1>
+								<div>Typeface</div>
+								<div>As</div>
+								<div>Programme</div>
+						</h1>
 
-			<main><!-- need to be fixed -->
+						<div class="space_h1"></div>
+						<p class="smallinfo">
+								<span>Jürg Lehni</span>
+								<span>Apr 2011</span>
+						</p>
+
+						<div class="space_h1"></div>
+						<h2>
+							The exploration of the technical aspects of ​type design and ​font software.				
+						</h2>
+						<div class="space"></div>
+				</div>
+		
 				<aside class="section">
 					<h3 class="section_title">
 						<div class="rotation">
@@ -57,7 +60,7 @@
 							<li><a href="#section3">
 								Approaches to Typefaces as Software </a>
 							</li>
-					</ul>
+						</ul>
 					</div>
 				</aside>
 
@@ -97,7 +100,7 @@
 							Democratisation is another important part of these developments. The sudden general availability of processes through computerisation has continued to increase the number of people who have access to and start engaging in them.
 						</div>
 						<p>
-							 In the creative sector, this also led to a change in the nature of the work being done, often to the disapproval of the previous specialists in the field. While type design in the 19th century was a craft accessible to very few selected typographers, who together with punchcutters worked on designs for one of the companies producing typesetting equipment, it is now a discipline that anyone who has access to a computer and a licence for a type design software can engage in.
+								In the creative sector, this also led to a change in the nature of the work being done, often to the disapproval of the previous specialists in the field. While type design in the 19th century was a craft accessible to very few selected typographers, who together with punchcutters worked on designs for one of the companies producing typesetting equipment, it is now a discipline that anyone who has access to a computer and a licence for a type design software can engage in.
 						</p>
 						<p>
 							These are generally known aspects of this revolution that have been looked at closely many times before. But the role of software is rarely analysed beyond this point. It appears that the general function of the computer is still accepted simply as a simulation machine, and the question what software could or should provide in any given field is rarely raised. Instead, the status quo is often accepted as a given, a language we use in our daily work and that we have stopped questioning, since it is so ubiquitous that is it almost invisible.
@@ -223,175 +226,31 @@
 						</p>
 					</div>
 				</section>
+			</section>
+			
+			<section>
+				<nav class="bookspine visible">
+					<section>
+							<a href="01_wysiwyg.html">
+									<span class="booknumber">01 </span>
+									<span class="book">WYSIWYG</span>
+							</a>    
+					</section>
+					<section>
+							<a href="02_typeface.html">
+									<span class="booknumber">02 </span>
+									<span class="book">Typeface</span>
+							</a>
+					</section>
+					<section>
+							<a href="03_post-artifact.html">
+									<span class="booknumber">03 </span>
+									<span class="book">Publishing</span>
+							</a>
+					</section>
+				</nav>				
+			</section>
 
-				<!--section 4
-				<section id="section4"></section>
-				<section class="section">
-					<h3 class="section_title">
-						<div class="rotation top">
-							<a href="#section4">4. Early Parametrised Digital Typesetting</a>
-						</div>
-						<div class="rotation btm">
-							<span><a href="#page-top">Top</a></span>
-						</div>
-					</h3>
-					<div class="contents">
-						<p>
-							As the author of the highly acclaimed monograph The Art of Computer Programming, listed by the American Scientist as one of the 12 best physical-science monographs of the 20th century, Donald E. Knuth was always concerned with the printed appearance of his works and fascinated by the technical facilities and the skills of their operators. The quality of the first three published volumes of his monograph, all typeset in Monotype Modern 8A on mechanical hot type machines from the same company, provided great satisfaction.						
-						</p>
-						<section class="quote pullquote">
-							<blockquote>
-								Knuth believed that solving the fundamental principle of using pixels as the core component of digital printing would have lasting utility, as this principle remains constant regardless of changes in surrounding technology.
-							</blockquote>
-						</section>
-						<p>
-							Excited by the impending technological revolution in print that would bring digital printing at a high enough resolution that the pixels would not be visible to the human eye, he decided to come up with a new system that would correctly compose typography in pixels, independent from machines and their resolution. The little squares that either contain 1 or 0, to represent ink or no ink, he concluded, were part of his realm as a computer scientist, so he assumed he should be able to come up with a better solution rather quickly. Knuth reasoned that if solved properly, this work could be of use for a very long time, since this basic principle of pixels as the core component of digital printing would not change, no matter how much the technology surrounding it does. All this happened before Adobe Systems was founded and the base for the page description language PostScript was laid out. At the beginning of this endeavour, Knuth did not even have the possibility to see the results on screen. Each time he wanted to try out a change in the software he had to make digital prints on a facility without easy or regular access.These huge devices were very expensive to run and an acquisition only made sense for large corporations with continuous use.
-						</p>
-						<p>
-							In 1978 Knuth was invited to speak in the prestigious Josiah Willard Gibbs Lecture, established by the American Mathematical Society (AMS) in 1923 and held annually to increase public awareness of the aspects of mathematics and its applications. Knuth quite bravely decided that instead of speaking purely about mathematics or algorithms, his talk should be about this new project that at the time received all his focus, preventing him from advancing with other projects. In the lecture entitled “Mathematical Typography,” Knuth presented his first analysis of the problems of recent printing technology in the domain of mathematical publications to a large group of mathematicians and scientists. Studying and comparing many different examples from the “Transactions of the American Mathematical Society,” a publication that began in 1900 and has more than 230 volumes to date, Knuth found that they were printed in at least 12 different styles. Of these the quality appeared to have generally declined to an absolute low in recent years, at which time he decided there was no point in continuing to write for these publications anymore.
-						</p>
-						<p>
-							Knuth then proposed solutions involving a row of computer-assisted methods of composition and layout that form the core of TeX, as well as what he identified as basic principles for mathematical type design. He introduced this territory by first looking at past proposals of typography based on mathematical and geometric constructions, such as the mostly geometry-based works by Felice Feliciano, Luca Pacioli, Francesco Torniello and Giovani Battista Palatino in Italy, as well as Geofroy Tory and later the commission of a group of artists and typographers to create a royal alphabet for Louis XIV in France. This historic detour was then followed by his proposal for a remedy that finally included some mathematical formulas to describe the characteristics of the curves he was looking for. He ended the talk by presenting a row of tests made with a rough, early version of Metafont, all playful and experimental in nature.
-						</p>
-						<p>
-							It is interesting to note that the term Mathematical Typography for him really goes both ways in a symbiotic, symmetrical way: 
-						</p>
-						<div class="strong">
-							the new typographic tools (to be created to help mathematical formulas to be correctly and appropriately typeset) and the mathematical formulas (needed to solve the typographic problems that the tools required to be designed) stood in a mutual relation.
-						</div>
-
-
-
-						<section class="quote pullquote">
-							<blockquote>
-								Have you ever edited and sent files to a printer to be reproduced several thousand times?
-								It’s terrifying.								
-							</blockquote>
-						</section>
-						<p>
-							To truly understand how strange and special they are, it helps to have experience with their analog cousins. Have you ever made a physical book before? What I mean is, have you ever edited and sent the files to a printer to be reproduced several thousand times? It’s terrifying. There is a pervasive hopelessness to the entire process. You know there must be mistakes. Check page numbers and punctuation a hundred times still, and by the sheer magnitude of molecules composing a book, you will miss something.
-						</p>
-						<p>
-							So submitting that file to be printed is to place ultimate faith in the book. To believe — because you must for the sake of sanity! — that this is the best you can do given the constraints. And you will have to live with the results forever
-						</p>
-						<p>
-							This is what makes physical so weighty. So precious. No matter how much you prepare, if you haven’t executed well, any misstep will be writ a thousand times over.
-						</p>
-						<p>
-							When someone says ‘book’ this is what we think of (but, curiously, we may be one of the last generations to think this). A very specific physicality. We imagine the thick cover. The well defined interior block. We feel the permanence of the object. Inside, the words are embedded in the paper. What’s printed there today will be the same stuff tomorrow. It’s reliable.
-						</p>
-						<p>
-							With digital, these qualities of printed books listed above become artificial. There is no thick cover constraining length. There are no additional printing costs for color. There is no permanence: the once sacred, unchanging nature of the text is sacred no longer. Updating digital text is trivially easy. When you look at the same digital book tomorrow, it may very well be different from the version you read today.
-						</p>
-						<p>
-							Outside of these obvious superficial differences, there are two qualities to digital artifacts that make them drastically different from physical artifacts:
-						</p>
-						<ul class="decimal">
-							<li>
-								they have a deep, interwoven connection with the pre- and post- artifact systems
-							</li>
-							<li>
-								they exist in the classical ‘complete’ form for only the briefest of instances								
-							</li>
-						</ul>
-						<p>
-							The connection with the pre-artifact system is obvious. For example, the ‘artifact’ output of a Wikipedia entry is a continued iteration — the product of a highly specialized pre-artifact system.
-						</p>							
-						<p>
-							The artifacts emerging from Domino owe nearly everything to the existence of a pre-artifact system — the vetting of ideas on a blog, the conversation with readers.
-						</p>
-						<p>
-							Once a physical artifact is ‘completed,’ printed, boxed and shipped, it’s done. It can’t change.24 We may scribble notes in the margins of our copy, but the next person to pick up a different copy won’t see those notes. They get the same blank ‘complete’ edition we got.
-						</p>
-						<div class="quote pullquote">
-							<blockquote>
-								For only the briefest of instances does the digital edition of a book exist in an untarnished, classic, ‘complete’ form.
-							</blockquote>
-						</div>
-						<p>
-							For only the briefest of instances — seconds, perhaps, for popular authors — does the digital edition of a book exist in this static, classic, ‘complete’ form. The moment a Kindle edition of a book is downloaded and highlighted it has been altered. The next person to download a copy of that book will be downloading the ‘complete’ form plus all associated marginalia. And the greater the integration of systems of marginalia, the greater the impact that subsequent conversations around the book will have on future readers.
-						</p>
-						<div class="strong">
-							The digital artifact, therefore, is a scaffolding between the pre- and post- artifact systems.
-						</div>
-					</div>
-				</section>
-
-				section 5
-				<section id="section5"></section>
-				<section class="section">
-					<h3 class="section_title">
-						<div class="rotation top">
-							<a href="#section5">5. Further Reading</a>
-						</div>
-						<div class="rotation btm">
-							<span><a href="#page-top">Top</a></span>
-						</div>
-					</h3>
-					<div class="contents">
-						<p>
-							Reading is, if nothing else, telepathy. Stephen King, in On Writing, after describing a table with a red cloth, cage, rabbit and blue number eight:
-						</p>
-						<section class="quote">
-							<blockquote>
-								"I sent you a table with a red cloth on it, a cage, a rabbit, and the number eight in blue ink. You saw them all, especially that blue eight. We’ve engaged in an act of telepathy. No mythy-mountain shit; real telepathy."
-							</blockquote>
-						</section>
-						<p>
-							But — and here’s the real magic — it’s a shared telepathy. A telepathy from one to many, and in that, the many have experiential overlap. Printed matter binds this experience to pulp. With digital, there is the promise of networking that shared experience.
-						</p>
-						<p>
-							We give form to our private telepathy through marginalia — marks, highlights, notes in the margins.
-						</p>
-						<p>
-							Years ago, I remember — before Kindles and iPads and before anyone knew of EPUB — hearing about the marginalia found in the books of Paul Rand’s library. I remember thinking how exciting it would be to browse his thoughts. To sort by them. To order them and share them. Use them as pivots for discussions. Comment around them. Draw lines from them and the books to which they were connected, to other books and the thoughts of other designers. To unlock, as it were, the marks of his telepathic experiences.
-						</p>
-						<div class="strong">
-							This is the post-artifact system. A system of unlocking. A system concerned with engagement. Sharing. Marginalia. Ownership. Community. And, of course, reading.
-						</div>
-						<p>
-							It's the system that transforms the book from isolated vessel for text into a shared interface.
-							It's a system that's beginning to appear in fits and starts in reading applications we use today. It’s the system most directly connected with readers. And it’s a system that, when executed well, makes going back to printed books feel positively neutered.							
-						</p>
-						<section class="quote pullquote">
-							<blockquote>
-								In the post-artifact system, marginalia becomes the key to unlocking a shared interface, transforming the book into a communal experience of engagement, sharing, ownership, and community.
-							</blockquote>
-						</section>
-						<p>
-							Structurally, marginalia represents a potentially infinite layering atop the content. Manifested properly, each new person who participates in the production of digital marginalia changes the reading experience of that book for the next person. Analog marginalia doesn't know other analog marginalia. Digital marginalia is a collective conversation, cumulative stratum.
-						</p>
-						<p>
-							Marginalia is, of course, nothing new. Like old Paul Rand, as long as we’ve had books we’ve been scribbling in them. Spilling coffee on them. Covering them in the dirt and dust of travel. Sometimes deliberately, sometimes unknowingly marking them with memories.
-						</p>
-						<p>
-							One classic manifestation of this mental detritus is the commonplace book. Liz Danzico expounds:
-						</p>
-						<section class="quote">
-							<blockquote>
-								"When John Locke began taking notes in 1652, he did so in such an elaborate way that a publisher named John Bell published a notebook called Bell’s Common-Place Book, Formed generally upon the Principles Recommended and Practised by Mr Locke. This notebook, eight pages of instructions on an indexing method, was for the first time a way of making it easier to navigate an otherwise messy semblance of notes and thoughts."
-							</blockquote>
-						</section>
-						<p>
-							I outlined several requests for the networked book around notes and marginalia in my April 2010 essay Embracing the Digital Book. “Show me the overlap of 10,000 readers' highlighted passages in a digital book,” I demanded. “Let Stefan Sagmeister publicly share the passages he’s highlighted in the new Murakami Haruki novel.”
-						</p>
-						<p>
-							I then went on:
-						</p>
-						<section class="quote">
-							<blockquote>
-								“When I’m done reading and marking a book, I should be able to create my own abridged copy. Show me just my highlights with notes. Let me export this edition. Let me email it to myself. Or, if you dare, automatically typeset it and let me order a POD copy for my personal library.”
-							</blockquote>
-						</section>
-						<p>
-							Soon after I completed that article Amazon released their Popular Highlights functionality.
-						</p>
-						<p>
-							Of all the large forces in the world of digital books, few are pushing forward as hard and fast as Amazon. They have already constructed the infrastructure for our networked commonplace books. It needs work, of course, but it’s a start.
-						</p>
-					</div>
-				</section>-->
-
-			</main>
-    </body>
+		</main>
+	</body>
 </html>

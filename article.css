@@ -1,13 +1,8 @@
-@media (min-width: 768px) {
-	:root {
-
-	}
-	h2{
-		text-align: center;
-  }
+.bookspine.visible{
+	display: none;
 }
 
-@media (min-width: 1028px) {
+@media (min-width: 768px) {
 	:root {
 
 	}
@@ -15,13 +10,27 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    
+
     background-color: var(--bg-section);
+    z-index: 2;
+  }
+	h2{
+		text-align: center;
+  }
+  .bookspine.visible{
+    display: flex;
   }
 }
 
-.section{
-	border-top: solid black 1px;
+@media (min-width: 1028px) {
+	:root {
+
+	}
+
 }
+
+/* .section{
+	border-top: solid black 1px;
+} */
 
 

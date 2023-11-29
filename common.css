@@ -72,12 +72,13 @@ header > p{
 
 
 main{
-	margin-top: calc(var(--cite-size) + var(--base-padding) + var(--base-padding));s
+	margin-top: calc(var(--cite-size) + var(--base-padding) + var(--base-padding));
 }
+
 header nav{
   border-bottom: var(--border);
   margin: 0 calc(-1 * var(--base-padding)); 
-  padding: 0 var(--base-padding) var(--base-padding);
+  padding: var(--base-padding) calc(2* var(--base-padding));
 }
 
 .padding_cover{
@@ -165,6 +166,7 @@ p.smallinfo{
 } */
 
 /* bookspine is move out to index.css */
+
 
 
 
@@ -391,25 +393,13 @@ blockquote{
 	margin: var(--base-font-size) 0;
 	line-height: calc(1.2 * var(--base-font-size));
 }
- /* 삭제해야함 */
-footer{
-	position:fixed;
-	bottom: 0;
-	right: 0;
 
-	writing-mode: vertical-lr;
-	font-size: var(--h3-font-size);
-	font-family: var(--font-info); 
-	
-	/* padding: var(--base-padding) 0; */
-	/* border-left: var(--border); */
-	padding: var(--padding-top);
-}
 
 
 
 @media (min-width: 768px) {
 	:root {
+		--shdw-pullquote: inset 0 0 300em 100em var(--bg-section);
 
 
 	}
@@ -428,6 +418,9 @@ footer{
 			
 		border-top: none;
 		border-bottom: none;
+
+		position: sticky;
+		top: 56px;
 	}
 
 	body{
@@ -443,14 +436,20 @@ footer{
 		padding-top: var(--base-font-size);
 
 		flex: 1;
-
+	}
+	.top{
+		top:56px;
+	}
+	.contents{
+		max-width: 600px;
+		padding-right: var(--base-padding);
 	}
 }
 
 @media (min-width: 1024px) {
 	:root {
 		--base-font-size: 20px;
-		--h1-font-size: calc(3 * var(--base-font-size));
+		--h1-font-size: calc(3.5 * var(--base-font-size));
 		--h2-font-size: calc(1.4 * var(--base-font-size));
 		--h3-font-size: calc(.8 * var(--base-font-size));
 		--ul-font-size: var(--base-font-size);
@@ -464,56 +463,14 @@ footer{
 		
 		--base-padding: 20px;
 
+		--shdw-pullquote: inset 0 0 3em 8em var(--bg-section);
 	}
 
-	header{
-
-	}
-	main{
-	}
-	.grid{
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-	}
 	.bookspine{
-		height: 100vh;
-			
-		border-top: none;
-		border-bottom: none;
+		top: 67px;
+		right: 0;
 	}
 
-	body{
-		height: 100vh;
-	}
-
-	.grid{
-		display: grid;
-
-	}
-
-	header {
-		padding: var(--base-padding) var(--base-padding) 0 ;
-	}
-
-	.bookspine section {
-		border-right: none;
-		border-left: var(--border);
-		border-top: none;
-
-		padding-top: var(--base-font-size);
-
-		flex: 1;
-	}
-	.bookspine section:last-child{
-		border-right: none;
-	}
-	.bookspine section a {
-		text-align: center;
-	}
-	.bookspine section a span:first-child {
-		writing-mode: horizontal-tb;
-
-	}
 }
 
 /* Welcome to the font world */
