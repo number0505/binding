@@ -26,7 +26,7 @@
 	--nav-size: calc(.9 * var(--base-font-size));
 	--cite-size: calc(.8 * var(--base-font-size));
   --booknumber-size: calc(1.2 * var(--base-font-size));
-	--book-size: calc(4 * var(--base-font-size));
+	--book-size: calc(3 * var(--base-font-size));
 
 	/* line height */
 	--lh-h1: calc(1 * var(--h1-font-size));
@@ -102,6 +102,7 @@ h1{
 	font-family: var(--font-h1);
 	font-size: var(--h1-font-size);
   line-height: var(--lh-h1);
+	margin: var(--h1-font-size) 0;
 
 	width: auto; /* <- ???? */
 
@@ -115,6 +116,10 @@ header > h1{
 	text-transform: uppercase;
 	line-height: var(--lh-h1);
 	
+}
+.inline{
+	display: inline;
+	padding-right: calc(2* var(--spacing));
 }
 
 .smallinfo{
@@ -261,6 +266,9 @@ h3{
 	font-size: var(--h3-font-size);
 	/* padding-top: var(--base-font-size);
 	margin-bottom: var(--spacing); */
+}
+.padding-btm{
+	padding-bottom: var(--base-padding);
 }
 
 

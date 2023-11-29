@@ -1,6 +1,10 @@
+:root{
+	--h2-font-size: calc(1.3 * var(--base-font-size));
+}
+
 .bookspine{
 	width: 100%;
-	height: 100%;
+	height: 80%;
 
 	border-top: var(--border);
 	border-bottom: var(--border);
@@ -12,9 +16,11 @@
 	writing-mode: vertical-rl;
 
 }
-/* h1{
+h1{
 	font-size: calc(1.5 * var(--h1-font-size));
-} */
+	
+}
+
 .bookspine section {
 	border-right: var(--border);
 	padding-top: var(--base-font-size);
