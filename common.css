@@ -159,7 +159,7 @@ p.smallinfo{
 
 .bookspine{
 	width: 100%;
-	height: 80vh;
+	height: 100vh;
 
 	border-top: var(--border);
 
@@ -170,7 +170,7 @@ p.smallinfo{
 	
 	background-color: var(--bg-section);
 
-	z-index: 1;
+	z-index: 2;
 }
 
 .bookspine section {
@@ -380,7 +380,7 @@ blockquote{
 	}
 
 		.bookspine{
-		height: 92vh;
+		height: 100vh;
 			
 		border-top: none;
 		border-bottom: none;
