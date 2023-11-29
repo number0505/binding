@@ -32,3 +32,5 @@
 	writing-mode: horizontal-tb;
 
 }
+
+.bookspine:hover { 	box-shadow: var(--shdw-section);}
