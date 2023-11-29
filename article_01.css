@@ -1,6 +1,6 @@
 :root{
 	--h1-font-size: calc(3.6 * var(--base-font-size));
 
-	--bg-shadow: rgb(194, 230, 171);
+	--bg-shadow: var(	--bg-01);
 
 }

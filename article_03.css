@@ -1,4 +1,4 @@
 :root{
-	--bg-shadow: rgb(163, 209, 226);
+	--bg-shadow: var(	--bg-03);
 
 }
