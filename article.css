@@ -5,14 +5,14 @@
 @media (min-width: 768px) {
 	:root {
 
-	}s
+	}
   header{
     position: fixed;
     top: 0;
     width: 100vw;
 
     background-color: var(--bg-section);
-    z-index: 2;
+    z-index: 200;
   }
 	h2{
 		text-align: center;
