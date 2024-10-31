@@ -12,7 +12,7 @@
     width: 100vw;
 
     background-color: var(--bg-section);
-    z-index: 2;
+    z-index: 3;
   }
 	h2{
 		text-align: center;
